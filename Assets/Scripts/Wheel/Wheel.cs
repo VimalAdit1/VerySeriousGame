@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -6,13 +8,21 @@ public class Wheel : MonoBehaviour
 {
     private bool isDragging = false;
     private Camera mainCamera;
-    private float startAngleDegrees;
+    private float startAngleDegrees; 
 
     private Vector3 mousePosition;
 
     private float previousAngle;
     private float currentAngle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    public Action<float,bool> onSpeedUpdate;
+
+    private float speed;
+    private bool isReverse;
+    
+    List<float> clockwiseAngles = new List<float>();
+    List<float> counterClockwiseAngles = new List<float>();
     void Start()
     {
         mainCamera = Camera.main;
@@ -27,12 +37,18 @@ public class Wheel : MonoBehaviour
             UpdateWheelRotation();
             if (previousAngle > currentAngle)
             {
-                Debug.Log("Rotating backward");
+                isReverse = false;
             }
             else if(previousAngle < currentAngle)
             {
-                Debug.Log("Rotating forward");
+                isReverse = true;
             }
+            else
+            {
+                return;
+            }
+            speed = Mathf.Abs(currentAngle - previousAngle);
+            onSpeedUpdate?.Invoke(speed,isReverse);
         }
     }
 

@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class IceBerg : MonoBehaviour
+{
+    float moveSpeed;
+    Rigidbody2D rb;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        rb.MovePosition(transform.position + Vector3.down * (moveSpeed * Time.deltaTime));
+        //transform.Translate();
+    }
+
+    public void SetSpeed(float icebergSpeed)
+    {
+        moveSpeed = icebergSpeed;
+    }
+}
