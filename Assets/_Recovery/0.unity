@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f665ec24830066a4b8930c273805826f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  miniGameToSpawn: {fileID: 5422974925223487855, guid: f22368e5a4fcb9d48a41ee5888a3a3a9, type: 3}
+  miniGameToSpawn: {fileID: 3591538315924382164, guid: e0270230da77b2b42a0de6bff85f1d9b, type: 3}
   gameUI: {fileID: 1564839027}
 --- !u!4 &669571374
 Transform:

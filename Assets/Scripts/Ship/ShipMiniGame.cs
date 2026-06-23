@@ -62,8 +62,9 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
                 iceBerg.SetSpeed(icebergSpeed);
                 yield return wait;
             }
+            yield return wait;
+            yield return wait;
         }
-        OnGameWon?.Invoke();
     }
 
     public string GetMiniGameTutorial()
@@ -74,5 +75,10 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
     public float GetMiniGameTime(int difficulty)
     {
         return timeScaling.GetValue(currentLevel);;
+    }
+
+    public bool IsGameOverOnTimeEnd()
+    {
+        return false;
     }
 }

@@ -17,6 +17,7 @@ public class Wheel : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public Action<float,bool> onSpeedUpdate;
+    private Vector3 localPosition;
 
     private float speed;
     private bool isReverse;
@@ -35,6 +36,7 @@ public class Wheel : MonoBehaviour
         {
             previousAngle = currentAngle;
             UpdateWheelRotation();
+            SnapMouse();
             if (previousAngle > currentAngle)
             {
                 isReverse = false;
@@ -47,12 +49,35 @@ public class Wheel : MonoBehaviour
             {
                 return;
             }
-            speed = Mathf.Abs(currentAngle - previousAngle);
+
+            speed = CalculateSpeedFromAngles();
+            if (speed >= 50f)
+            {
+                Debug.Log("Current Angle"+currentAngle+"Previous Angle"+previousAngle);
+            }
             onSpeedUpdate?.Invoke(speed,isReverse);
         }
     }
 
-    
+    private void SnapMouse()
+    {
+        if (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f)
+        {
+            Vector3 worldPos = transform.TransformPoint(localPosition);
+            Mouse.current.WarpCursorPosition(mainCamera.WorldToScreenPoint(worldPos));
+        }
+        
+    }
+
+    private float CalculateSpeedFromAngles()
+    {
+        float angleDifference = Normalize(currentAngle) - Normalize(previousAngle);
+        angleDifference = Mathf.Abs(angleDifference);
+        angleDifference = (angleDifference+180) % 360 - 180;
+        return angleDifference;
+    }
+
+
     private void UpdateWheelRotation()
     {
        mousePosition = (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -62,11 +87,19 @@ public class Wheel : MonoBehaviour
        transform.rotation = Quaternion.Euler(0, 0, angleDegrees);
        currentAngle = angleDegrees;
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1f, 0f, 0f, 1); 
+        
+        Gizmos.DrawSphere(transform.TransformPoint(localPosition), 0.1f);
+
+    }
 
     public void OnMouseDown()
     {
         isDragging = true;
         mousePosition = (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        localPosition = transform.InverseTransformPoint(mousePosition);
         var startAngle = Mathf.Atan2(mousePosition.y-transform.position.y, mousePosition.x-transform.position.x);
         startAngleDegrees = startAngle * 180 / Mathf.PI;
         startAngleDegrees -= transform.eulerAngles.z;
@@ -75,5 +108,9 @@ public class Wheel : MonoBehaviour
     public void OnMouseUp()
     {
         isDragging = false;
+    }
+    public float Normalize(float angle)
+    {
+        return ((angle % 360f) + 360f) % 360f;
     }
 }

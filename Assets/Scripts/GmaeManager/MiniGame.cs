@@ -10,4 +10,6 @@ public interface MiniGame
  public void StopMiniGame();
  public string GetMiniGameTutorial();
  public float GetMiniGameTime(int difficulty);
+ 
+ public bool IsGameOverOnTimeEnd();
 }

@@ -62,12 +62,12 @@ public class GameUI : MonoBehaviour
         winScreen.SetActive(value);
     }
 
-    internal void SetTimer(float timer)
+    internal void SetTimer(float timer,bool isGameOverOnTimeEnd)
     {
-        timerCoroutine = StartCoroutine(CountDownTimer(timer));
+        timerCoroutine = StartCoroutine(CountDownTimer(timer,isGameOverOnTimeEnd));
     }
 
-    private IEnumerator CountDownTimer(float timer)
+    private IEnumerator CountDownTimer(float timer,bool isGameOverOnTimeEnd)
     {
         float elapsedTime = 0f;
         
@@ -79,7 +79,14 @@ public class GameUI : MonoBehaviour
             yield return null;
         }
 
-        GameManager.instance.GameWon();
+        if (isGameOverOnTimeEnd)
+        {
+            GameManager.instance.GameLost();
+        }
+        else
+        {
+            GameManager.instance.GameWon();
+        }
     }
 
     public void RetryLevel()

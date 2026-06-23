@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Obstacle
+  - MusicNote
   layers:
   - Default
   - TransparentFX

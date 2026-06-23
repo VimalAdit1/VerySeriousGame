@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         gameUI.Reset();
         gameUI.HideAllUI();
         gameUI.ShowPreGameScreen(currentMiniGame.GetMiniGameTutorial());
-        gameUI.SetTimer(timer);
+        gameUI.SetTimer(timer,currentMiniGame.IsGameOverOnTimeEnd());
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         gameUI.ToggleGameOverScreen(true);
     }
 
-    public void GameWon()
+    internal void GameWon()
     {
         OnGameWon();
     }
@@ -75,5 +75,10 @@ public class GameManager : MonoBehaviour
     {
        GameObject.Destroy(miniGameObj);
        SpawnMiniGame();
+    }
+
+    internal void GameLost()
+    {
+        OnGameLost();
     }
 }
