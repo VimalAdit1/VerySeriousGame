@@ -192,6 +192,10 @@ MonoBehaviour:
   decelerationScaling: {fileID: 11400000, guid: a5ba1e39c9830bb4a92a7987e3f29066, type: 2}
   tutorialText: Make a vortex
   wheel: {fileID: 3648620308620831529}
+  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  cutsceneTime: 5
+  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  endCutsceneTime: 5
 --- !u!1 &5781468010949412875
 GameObject:
   m_ObjectHideFlags: 0

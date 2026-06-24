@@ -10,6 +10,11 @@ public class GameUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tutorialText;
     [SerializeField] private GameObject winScreen;
     [SerializeField] private GameObject gameLostScreen;
+    [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private GameObject lifeLostScreen;
+    [SerializeField] private TextMeshProUGUI lifeLostText;
+    [SerializeField] private Image[] livesImage;
+    private int livesLeft;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     bool acceptInput = false;
@@ -22,14 +27,12 @@ public class GameUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (acceptInput)
+        if (!acceptInput) return;
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                HidePreGameScreen();
-                acceptInput = false;
-                GameManager.instance.StartMiniGame();
-            }
+            HidePreGameScreen();
+            acceptInput = false;
+            GameManager.instance.StartMiniGame();
         }
     }
 
@@ -37,8 +40,10 @@ public class GameUI : MonoBehaviour
     internal void HideAllUI()
     {
         HidePreGameScreen();
-        ToggleGameOverScreen(false);
+        ToggleRetryScreen(false);
         ToggleWinScreen(false);
+        ToggleGameOverScreen(false);
+        ToggleLifeLostScreen(false);
     }
 
     internal void HidePreGameScreen()
@@ -46,7 +51,7 @@ public class GameUI : MonoBehaviour
         preGameScreen.SetActive(false);
     }
 
-    internal void ToggleGameOverScreen(bool value)
+    internal void ToggleRetryScreen(bool value)
     {
         gameLostScreen.SetActive(value);
     }
@@ -81,17 +86,26 @@ public class GameUI : MonoBehaviour
 
         if (isGameOverOnTimeEnd)
         {
-            GameManager.instance.GameLost();
+            GameManager.instance.OnGameLost();
         }
         else
         {
-            GameManager.instance.GameWon();
+            GameManager.instance.OnGameWon();
         }
     }
 
     public void RetryLevel()
     {
         GameManager.instance.RetryMiniGame();
+    }
+
+    public void NextLevel()
+    {
+        GameManager.instance.NextLevel();
+    }
+    public void RestartLevel()
+    {
+        GameManager.instance.Restart();
     }
 
     public void Reset()
@@ -101,5 +115,36 @@ public class GameUI : MonoBehaviour
        {
            StopCoroutine(timerCoroutine);
        }
+    }
+
+    public void UpdateLivesLeft(int value)
+    {
+        livesLeft = value;
+        foreach (var image in livesImage)
+        {
+            image.enabled = false;
+        }
+        for (int i = 0; i < livesLeft; i++)
+        {
+            livesImage[i].enabled = true;
+        }
+    }
+
+    public void ToggleGameOverScreen(bool value)
+    {
+        gameOverScreen.SetActive(value);
+    }
+
+    public void ToggleLifeLostScreen(bool value)
+    {
+        lifeLostScreen.SetActive(value);
+        if (livesLeft > 1)
+        {
+            lifeLostText.SetText("You have "+livesLeft+" chances left.");
+        }
+        else
+        {
+            lifeLostText.SetText("You have only one chance left.");
+        }
     }
 }

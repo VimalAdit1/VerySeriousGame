@@ -16,6 +16,11 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     [SerializeField]MusicNote musicNotePrefab;
     [SerializeField]int musicNotesToMiss;
     
+    [SerializeField]GameObject startCutscene;
+    [SerializeField] private float cutsceneTime;
+    [SerializeField] GameObject endCutscene;
+    [SerializeField] private float endCutsceneTime;
+    
     int currentLevel = 0;
     private int notesToSpawn;
     private float waitTime;
@@ -77,6 +82,29 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     public bool IsGameOverOnTimeEnd()
     {
         return false;
+    }
+
+    public IEnumerator PlayStartCutscene()
+    {
+        yield return StartCoroutine(PlayCutscene(startCutscene,cutsceneTime));
+        GameManager.instance.PrepareMiniGame();
+    }
+
+    private IEnumerator PlayCutscene(GameObject cutscene, float cutscenelength)
+    {
+        Debug.Log("Playing Cutscene");
+        Time.timeScale = 1;
+        GameObject newCutscene = Instantiate(cutscene, GameManager.instance.GetCanvas().transform);
+        newCutscene.transform.SetParent(GameManager.instance.GetCanvas().transform);
+        yield return new WaitForSecondsRealtime(cutscenelength);
+        Debug.Log("Cutscene Ended");
+        Destroy(newCutscene);
+    }
+
+    public IEnumerator PlayEndCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
+        GameManager.instance.OnCutsceneEnd();
     }
 
     public void MusicNoteCollected()

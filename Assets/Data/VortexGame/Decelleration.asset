@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140a602826d373b43aa8b437fd382fda, type: 3}
   m_Name: Decelleration
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
-  minValue: 5
+  minValue: 3
   maxValue: 15
   customValues:
   - 5
-  - 10
-  - 15
-  flipMinAndMax: 1
+  - 5
+  - 5
+  flipMinAndMax: 0

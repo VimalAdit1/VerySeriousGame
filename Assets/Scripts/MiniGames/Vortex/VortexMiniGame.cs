@@ -10,15 +10,20 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     [SerializeField]DifficultyScaling decelerationScaling;
     [SerializeField]String tutorialText;
     [SerializeField]Wheel wheel;
+    
+    [SerializeField]GameObject startCutscene;
+    [SerializeField] private float cutsceneTime;
+    [SerializeField] GameObject endCutscene;
+    [SerializeField] private float endCutsceneTime;
+    
+    
     int currentLevel = 0;
     float decelerationRate;
     private float speedToReach;
     private float currentSpeed;
+    private float previousSpeed;
     bool gameStarted = false;
-    void Start()
-    {
-        
-    }
+    
 
     void Update()
     {
@@ -32,9 +37,13 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
             OnGameWon?.Invoke();
             StopMiniGame();
         }
-        if (currentSpeed > 0)
+        if (Mathf.Approximately(previousSpeed, currentSpeed))
         {
             currentSpeed -= decelerationRate * Time.deltaTime;
+        }
+        else
+        {
+            previousSpeed = currentSpeed;
         }
     }
 
@@ -76,5 +85,27 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     public bool IsGameOverOnTimeEnd()
     {
         return true;
+    }
+
+    public IEnumerator PlayStartCutscene()
+    {
+        yield return StartCoroutine(PlayCutscene(startCutscene,cutsceneTime));
+        GameManager.instance.PrepareMiniGame();
+    }
+
+    private IEnumerator PlayCutscene(GameObject cutscene, float cutscenelength)
+    {
+        Debug.Log("Playing Cutscene");
+        GameObject newCutscene = Instantiate(cutscene, GameManager.instance.GetCanvas().transform);
+        newCutscene.transform.SetParent(GameManager.instance.GetCanvas().transform);
+        yield return new WaitForSecondsRealtime(cutscenelength);
+        Debug.Log("Cutscene Ended");
+        Destroy(newCutscene);
+    }
+
+    public IEnumerator PlayEndCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
+        GameManager.instance.OnCutsceneEnd();
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public interface MiniGame
@@ -12,4 +13,7 @@ public interface MiniGame
  public float GetMiniGameTime(int difficulty);
  
  public bool IsGameOverOnTimeEnd();
+ 
+ public IEnumerator PlayStartCutscene();
+ public IEnumerator PlayEndCutscene();
 }

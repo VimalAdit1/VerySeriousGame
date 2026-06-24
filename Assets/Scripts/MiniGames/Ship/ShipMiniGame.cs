@@ -14,7 +14,13 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
     [SerializeField]DifficultyScaling spawnRateScaling;
     [SerializeField]DifficultyScaling speedScaling;
     [SerializeField]String tutorialText;
+    
     [SerializeField] private Ship ship;
+    
+    [SerializeField]GameObject startCutscene;
+    [SerializeField] private float cutsceneTime;
+    [SerializeField] GameObject endCutscene;
+    [SerializeField] private float endCutsceneTime;
     
     int currentLevel = 0;
     private int icebergsToSpawn;
@@ -80,5 +86,27 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
     public bool IsGameOverOnTimeEnd()
     {
         return false;
+    }
+
+    public IEnumerator PlayStartCutscene()
+    {
+        yield return StartCoroutine(PlayCutscene(startCutscene,cutsceneTime));
+        GameManager.instance.PrepareMiniGame();
+    }
+
+    private IEnumerator PlayCutscene(GameObject cutscene, float cutscenelength)
+    {
+        Debug.Log("Playing Cutscene");
+        GameObject newCutscene = Instantiate(cutscene, GameManager.instance.GetCanvas().transform);
+        newCutscene.transform.SetParent(GameManager.instance.GetCanvas().transform);
+        yield return new WaitForSecondsRealtime(cutscenelength);
+        Debug.Log("Cutscene Ended");
+        Destroy(newCutscene);
+    }
+
+    public IEnumerator PlayEndCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
+        GameManager.instance.OnCutsceneEnd();
     }
 }

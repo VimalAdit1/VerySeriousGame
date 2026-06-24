@@ -282,6 +282,10 @@ MonoBehaviour:
   speedScaling: {fileID: 11400000, guid: 188258827dedca04a918e481a5f9ef2f, type: 2}
   musicNotePrefab: {fileID: 6372996194730779782, guid: e68dcaf3ca26dae4dad972ed4b2123ef, type: 3}
   musicNotesToMiss: 5
+  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  cutsceneTime: 5
+  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  endCutsceneTime: 5
 --- !u!1 &1295291443305470640
 GameObject:
   m_ObjectHideFlags: 0
