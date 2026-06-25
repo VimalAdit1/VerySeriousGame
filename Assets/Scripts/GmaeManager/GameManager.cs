@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
     internal void OnGameLost()
     {
         
-        Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
+        Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(false);
         gameUI.Reset();
         gameUI.SetLooseScreenSprite(spriteToShow);
         if (isStoryMode)

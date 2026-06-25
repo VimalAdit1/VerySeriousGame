@@ -59,12 +59,13 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
   endCutsceneTime: 5
-  animator: {fileID: 1677491721093318510}
-  merryGoround: {fileID: 7565759615201216248}
-  sprite1: {fileID: 1708721603192378490, guid: 526a8a40a658641469aadabe614e605b, type: 3}
-  sprite2: {fileID: 8443097613593397387, guid: 526a8a40a658641469aadabe614e605b, type: 3}
-  sprite3: {fileID: 290807168849100063, guid: 526a8a40a658641469aadabe614e605b, type: 3}
-  sprite4: {fileID: 7867347053782832000, guid: 526a8a40a658641469aadabe614e605b, type: 3}
+  winSprite: {fileID: 21300000, guid: 476ff1a90423e1f4b97ee9605987c731, type: 3}
+  looseSprite: {fileID: 21300000, guid: 30b07518162679b4e97c08757543ac82, type: 3}
+  miniGameAmbience: []
+  winAmbience: []
+  loseAmbience: []
+  winSFX: []
+  loseSFX: []
 --- !u!1 &947040509941867385
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 8790698103937759302}
+  wheelTurnAudio: {fileID: 0}
 --- !u!58 &7568980274316473753
 CircleCollider2D:
   m_ObjectHideFlags: 0
