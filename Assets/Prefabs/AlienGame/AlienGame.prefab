@@ -805,12 +805,14 @@ MonoBehaviour:
   currentSprite: {fileID: 5810411141836787300}
   frequencyWheel: {fileID: 1665660868370885456}
   amplitudeWheel: {fileID: 4298934341845853427}
-  minFrequency: 0
+  minFrequency: 3
   maxFrequency: 15
-  minAmplitude: 0
-  maxAmplitude: 0.2
+  minAmplitude: 0.1
+  maxAmplitude: 0.3
   frequencyThreshold: 0.5
   amplitudeThreshold: 0.01
+  winSprite: {fileID: 0}
+  looseSprite: {fileID: 0}
   miniGameAmbience:
   - {fileID: 8300000, guid: ccc556608d58de64db4c5f68b57f7211, type: 3}
   winAmbience:

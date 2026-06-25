@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SpeedScaling
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
   minValue: 40
-  maxValue: 50
+  maxValue: 500
   customValues:
-  - 40
-  - 50
-  - 50
+  - 400
+  - 450
+  - 500
   flipMinAndMax: 0

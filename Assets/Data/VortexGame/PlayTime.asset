@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PlayTime
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
   minValue: 5
-  maxValue: 20
+  maxValue: 30
   customValues:
   - 20
-  - 15
-  - 10
+  - 25
+  - 30
   flipMinAndMax: 1

@@ -109,7 +109,7 @@ MonoBehaviour:
   wheel: {fileID: 2762152833813859793}
   minTransform: {fileID: 7364729149411215065}
   maxTransform: {fileID: 6207054762585378680}
-  maxSpeed: 1
+  maxSpeed: 3
   minSpeed: 0.2
   shipSpriteRenderer: {fileID: 4626941900799752977}
   leftSprite: {fileID: 6102294189327227654, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
