@@ -18,6 +18,8 @@ public class Wheel : MonoBehaviour
     
     public Action<float,bool> onSpeedUpdate;
     private Vector3 localPosition;
+    
+    [SerializeField]private Transform shadowTransform;
 
     private float speed;
     private bool isReverse;
@@ -45,17 +47,14 @@ public class Wheel : MonoBehaviour
             {
                 isReverse = true;
             }
-            else
-            {
-                return;
-            }
-
             speed = CalculateSpeedFromAngles();
-            if (speed >= 50f)
-            {
-                Debug.Log("Current Angle"+currentAngle+"Previous Angle"+previousAngle);
-            }
+
             onSpeedUpdate?.Invoke(speed,isReverse);
+        }
+
+        if (shadowTransform)
+        {
+            shadowTransform.rotation = transform.rotation;
         }
     }
 

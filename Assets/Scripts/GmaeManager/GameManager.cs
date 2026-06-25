@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
             GameObject.Destroy(miniGameObj);
         miniGameToSpawn = miniGamesToSpawn[currentMinigameIndex];
         miniGameObj = GameObject.Instantiate(miniGameToSpawn, transform.position, Quaternion.identity).gameObject;
+        miniGameObj.transform.position = Vector3.zero;
         currentMiniGame = miniGameObj.GetComponent<MiniGame>();
         Time.timeScale = 1;
         if (isStoryMode)

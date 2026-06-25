@@ -9,8 +9,16 @@ public class Ship : MonoBehaviour
     [SerializeField] Transform maxTransform;
     [SerializeField] float maxSpeed = 20f;
     [SerializeField] float minSpeed = 10f;
+    
+    [SerializeField] SpriteRenderer shipSpriteRenderer;
+    [SerializeField] Sprite leftSprite;
+    [SerializeField] Sprite rightSprite;
+    [SerializeField] Sprite defaultSprite;
     ShipMiniGame miniGame;
     Rigidbody2D rb;
+    
+    bool isSteering;
+    bool isMovingRight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,15 +29,28 @@ public class Ship : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateSprite()
     {
-        
+        if (!isSteering)
+        {
+            shipSpriteRenderer.sprite = defaultSprite;
+        }
+        else
+        {
+            if (isMovingRight)
+            {
+                shipSpriteRenderer.sprite = rightSprite;
+            }
+            else
+            {
+                shipSpriteRenderer.sprite = leftSprite;
+            }
+        }
     }
 
     void OnWheelUpdate(float speed, bool isReverse)
     {
-        if (speed < minSpeed)
+        if (speed < minSpeed && speed>0)
         {
             speed = minSpeed;
         }
@@ -37,6 +58,8 @@ public class Ship : MonoBehaviour
         {
             speed = maxSpeed;
         }
+        isMovingRight = !isReverse;
+        isSteering = speed!=0;
         speed = isReverse ? -speed : speed;
         //transform.Translate(Vector3.right * (speed * Time.deltaTime), Space.World);
         rb.MovePosition(transform.position + Vector3.right * (speed * Time.deltaTime));
@@ -48,6 +71,7 @@ public class Ship : MonoBehaviour
         {
             transform.position = maxTransform.position;
         }
+        UpdateSprite();
         
     }
 
