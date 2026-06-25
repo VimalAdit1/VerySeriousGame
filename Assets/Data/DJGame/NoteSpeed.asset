@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140a602826d373b43aa8b437fd382fda, type: 3}
   m_Name: NoteSpeed
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
-  minValue: 3
+  minValue: 1
   maxValue: 10
   customValues:
+  - 2
   - 3
-  - 5
-  - 8
+  - 4
   flipMinAndMax: 0
