@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: e36115cd90eccea48aac7c6a5fc025c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2862482188564304849
+    second: Titanic 2.0 avoided!_0
+  - first:
+      213: 4134181054527979129
+    second: Titanic 2.0 avoided!_1
+  - first:
+      213: 4874831023766860253
+    second: Titanic 2.0 avoided!_2
+  - first:
+      213: -8121971853433555632
+    second: Titanic 2.0 avoided!_3
+  - first:
+      213: 6665231752696796667
+    second: Titanic 2.0 avoided!_4
+  - first:
+      213: 1643089352951751997
+    second: Titanic 2.0 avoided!_5
+  - first:
+      213: -575097762873987641
+    second: Titanic 2.0 avoided!_6
+  - first:
+      213: 1024827835269693485
+    second: Titanic 2.0 avoided!_7
+  - first:
+      213: 7192849047861228208
+    second: Titanic 2.0 avoided!_8
+  - first:
+      213: -6526650842277462123
+    second: Titanic 2.0 avoided!_9
+  - first:
+      213: 7896586442319599446
+    second: Titanic 2.0 avoided!_10
+  - first:
+      213: 3073978227345325609
+    second: Titanic 2.0 avoided!_11
+  - first:
+      213: 8298739352215645616
+    second: Titanic 2.0 avoided!_12
+  - first:
+      213: -3161303186678433465
+    second: Titanic 2.0 avoided!_13
+  - first:
+      213: -173185603566209683
+    second: Titanic 2.0 avoided!_14
+  - first:
+      213: 1894231308894237874
+    second: Titanic 2.0 avoided!_15
+  - first:
+      213: -6689499404759007677
+    second: Titanic 2.0 avoided!_16
+  - first:
+      213: -8032865534563827145
+    second: Titanic 2.0 avoided!_17
+  - first:
+      213: 6678762303352042422
+    second: Titanic 2.0 avoided!_18
+  - first:
+      213: -2828775506794481680
+    second: Titanic 2.0 avoided!_19
+  - first:
+      213: 5388480026361067489
+    second: Titanic 2.0 avoided!_20
+  - first:
+      213: -3374193723111131713
+    second: Titanic 2.0 avoided!_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d31249626499b720800000000000000
+      internalID: 2862482188564304849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 51
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e3a48e3cf8f5930800000000000000
+      internalID: 4134181054527979129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd17da7fcf0e6a340800000000000000
+      internalID: 4874831023766860253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0553f50a1a5f84f80800000000000000
+      internalID: -8121971853433555632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5952517f8af7c50800000000000000
+      internalID: 6665231752696796667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d356ae0af0d6dc610800000000000000
+      internalID: 1643089352951751997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 51
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd26c4b1a7d408f0800000000000000
+      internalID: -575097762873987641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20ce258c7be83e00800000000000000
+      internalID: 1024827835269693485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b276c4891222d360800000000000000
+      internalID: 7192849047861228208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f3c0d73adac65a0800000000000000
+      internalID: -6526650842277462123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65710a8088f469d60800000000000000
+      internalID: 7896586442319599446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_11
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ef33049e6f8aa20800000000000000
+      internalID: 3073978227345325609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd6e54e87b0b2370800000000000000
+      internalID: 8298739352215645616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_13
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749b8b2408bc024d0800000000000000
+      internalID: -3161303186678433465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_14
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 51
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6579337c98b89df0800000000000000
+      internalID: -173185603566209683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_15
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b47011e659a94a10800000000000000
+      internalID: 1894231308894237874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_16
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 0
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ef62edbbf1a23a0800000000000000
+      internalID: -6689499404759007677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_17
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 0
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73248d33b57858090800000000000000
+      internalID: -8032865534563827145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_18
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b37196edeabfac50800000000000000
+      internalID: 6678762303352042422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_19
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 23
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f770300aab2eb8d0800000000000000
+      internalID: -2828775506794481680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_20
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7f98ad80ab7ca40800000000000000
+      internalID: 5388480026361067489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanic 2.0 avoided!_21
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5bb92afa47c21d0800000000000000
+      internalID: -3374193723111131713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Titanic 2.0 avoided!_0: 2862482188564304849
+      Titanic 2.0 avoided!_1: 4134181054527979129
+      Titanic 2.0 avoided!_10: 7896586442319599446
+      Titanic 2.0 avoided!_11: 3073978227345325609
+      Titanic 2.0 avoided!_12: 8298739352215645616
+      Titanic 2.0 avoided!_13: -3161303186678433465
+      Titanic 2.0 avoided!_14: -173185603566209683
+      Titanic 2.0 avoided!_15: 1894231308894237874
+      Titanic 2.0 avoided!_16: -6689499404759007677
+      Titanic 2.0 avoided!_17: -8032865534563827145
+      Titanic 2.0 avoided!_18: 6678762303352042422
+      Titanic 2.0 avoided!_19: -2828775506794481680
+      Titanic 2.0 avoided!_2: 4874831023766860253
+      Titanic 2.0 avoided!_20: 5388480026361067489
+      Titanic 2.0 avoided!_21: -3374193723111131713
+      Titanic 2.0 avoided!_3: -8121971853433555632
+      Titanic 2.0 avoided!_4: 6665231752696796667
+      Titanic 2.0 avoided!_5: 1643089352951751997
+      Titanic 2.0 avoided!_6: -575097762873987641
+      Titanic 2.0 avoided!_7: 1024827835269693485
+      Titanic 2.0 avoided!_8: 7192849047861228208
+      Titanic 2.0 avoided!_9: -6526650842277462123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

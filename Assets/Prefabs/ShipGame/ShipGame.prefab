@@ -880,10 +880,10 @@ MonoBehaviour:
   speedScaling: {fileID: 11400000, guid: 5dffda8d37feb3041a5d133cdbb41e05, type: 2}
   tutorialText: Don't crash the ship
   ship: {fileID: 5444870006346414139}
-  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  cutsceneTime: 5
-  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  endCutsceneTime: 5
+  startCutscene: {fileID: 6321717202233255187, guid: 933647e7744d0414ca659c33d01f9591, type: 3}
+  cutsceneTime: 8
+  endCutscene: {fileID: 6321717202233255187, guid: fdac6ba23bb99f840b040248af0286c3, type: 3}
+  endCutsceneTime: 10
 --- !u!1 &8527949476282080814
 GameObject:
   m_ObjectHideFlags: 0
