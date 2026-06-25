@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 51bc5828d34d5454ca20d1cc6dfd85a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5991400378861022683
+    second: BREAKING NEWS!! BREAKING NEWS!!_0
+  - first:
+      213: 4802486884358833151
+    second: BREAKING NEWS!! BREAKING NEWS!!_1
+  - first:
+      213: -3581742548198148043
+    second: BREAKING NEWS!! BREAKING NEWS!!_2
+  - first:
+      213: -3235381197235727011
+    second: BREAKING NEWS!! BREAKING NEWS!!_3
+  - first:
+      213: 7675069048344330140
+    second: BREAKING NEWS!! BREAKING NEWS!!_4
+  - first:
+      213: -8049472424188058754
+    second: BREAKING NEWS!! BREAKING NEWS!!_5
+  - first:
+      213: 885173260916584467
+    second: BREAKING NEWS!! BREAKING NEWS!!_6
+  - first:
+      213: -8014312961757675147
+    second: BREAKING NEWS!! BREAKING NEWS!!_7
+  - first:
+      213: -6635670922148680839
+    second: BREAKING NEWS!! BREAKING NEWS!!_8
+  - first:
+      213: -1274341237820927111
+    second: BREAKING NEWS!! BREAKING NEWS!!_9
+  - first:
+      213: -3788863297841235990
+    second: BREAKING NEWS!! BREAKING NEWS!!_10
+  - first:
+      213: 5174480152875475297
+    second: BREAKING NEWS!! BREAKING NEWS!!_11
+  - first:
+      213: -2564223103454747351
+    second: BREAKING NEWS!! BREAKING NEWS!!_12
+  - first:
+      213: 3195206114519342910
+    second: BREAKING NEWS!! BREAKING NEWS!!_13
+  - first:
+      213: -5437844041262340261
+    second: BREAKING NEWS!! BREAKING NEWS!!_14
+  - first:
+      213: 3331371824892970475
+    second: BREAKING NEWS!! BREAKING NEWS!!_15
+  - first:
+      213: -8943630572458162982
+    second: BREAKING NEWS!! BREAKING NEWS!!_16
+  - first:
+      213: 5440018015437319990
+    second: BREAKING NEWS!! BREAKING NEWS!!_17
+  - first:
+      213: 1903876826183310756
+    second: BREAKING NEWS!! BREAKING NEWS!!_18
+  - first:
+      213: 696684845705797617
+    second: BREAKING NEWS!! BREAKING NEWS!!_19
+  - first:
+      213: -3159790613506682669
+    second: BREAKING NEWS!! BREAKING NEWS!!_20
+  - first:
+      213: 8017103245437690035
+    second: BREAKING NEWS!! BREAKING NEWS!!_21
+  - first:
+      213: -3152374907323240429
+    second: BREAKING NEWS!! BREAKING NEWS!!_22
+  - first:
+      213: -8826930719895084473
+    second: BREAKING NEWS!! BREAKING NEWS!!_23
+  - first:
+      213: 6001977619210107233
+    second: BREAKING NEWS!! BREAKING NEWS!!_24
+  - first:
+      213: -7658292705985001408
+    second: BREAKING NEWS!! BREAKING NEWS!!_25
+  - first:
+      213: 9097724528373336674
+    second: BREAKING NEWS!! BREAKING NEWS!!_26
+  - first:
+      213: 7816085323804323090
+    second: BREAKING NEWS!! BREAKING NEWS!!_27
+  - first:
+      213: -5257418719236872237
+    second: BREAKING NEWS!! BREAKING NEWS!!_28
+  - first:
+      213: -8655511380050641867
+    second: BREAKING NEWS!! BREAKING NEWS!!_29
+  - first:
+      213: -3774028216718928276
+    second: BREAKING NEWS!! BREAKING NEWS!!_30
+  - first:
+      213: 2084961318609194925
+    second: BREAKING NEWS!! BREAKING NEWS!!_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdde62996eab52350800000000000000
+      internalID: 5991400378861022683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff34eac606cd5a240800000000000000
+      internalID: 4802486884358833151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5383fb911281b4ec0800000000000000
+      internalID: -3581742548198148043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5559c161fd9913d0800000000000000
+      internalID: -3235381197235727011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fb82d92a2538a60800000000000000
+      internalID: 7675069048344330140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1
+        width: 25
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73e7f66a778a4090800000000000000
+      internalID: -8049472424188058754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3107b951464c84c00800000000000000
+      internalID: 885173260916584467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57100aba2d077c090800000000000000
+      internalID: -8014312961757675147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b60fe147c59e3a0800000000000000
+      internalID: -6635670922148680839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_9
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9735d0d5561a05ee0800000000000000
+      internalID: -1274341237820927111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1
+        width: 94
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae778a5a7e04b6bc0800000000000000
+      internalID: -3788863297841235990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 40
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161a37198427fc740800000000000000
+      internalID: 5174480152875475297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_12
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 25
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925eab95cac0a6cd0800000000000000
+      internalID: -2564223103454747351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_13
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 25
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fd4104807a75c20800000000000000
+      internalID: 3195206114519342910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_14
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1
+        width: 63
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b576598c7a5e884b0800000000000000
+      internalID: -5437844041262340261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_15
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be58d7d36096b3e20800000000000000
+      internalID: 3331371824892970475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_16
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4ce463167d1e380800000000000000
+      internalID: -8943630572458162982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fedd50093de7b40800000000000000
+      internalID: 5440018015437319990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_18
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad11c0e2edeb6a10800000000000000
+      internalID: 1903876826183310756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_19
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1
+        width: 25
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff11bc0d2f1ba900800000000000000
+      internalID: 696684845705797617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_20
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 1
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d01255ad2b2624d0800000000000000
+      internalID: -3159790613506682669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_21
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 0
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0e1ffdce8724f60800000000000000
+      internalID: 8017103245437690035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_22
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310b42a49b38044d0800000000000000
+      internalID: -3152374907323240429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_23
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742abaff641708580800000000000000
+      internalID: -8826930719895084473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_24
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1
+        width: 94
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169fcd648de4b4350800000000000000
+      internalID: 6001977619210107233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_25
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 0
+        width: 40
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0488cc9fb5748b590800000000000000
+      internalID: -7658292705985001408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_26
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 25
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a0d0ab14c914e70800000000000000
+      internalID: 9097724528373336674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_27
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 25
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d208bc030587c60800000000000000
+      internalID: 7816085323804323090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_28
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 0
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7a564a785e907b0800000000000000
+      internalID: -5257418719236872237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_29
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cfaba324271e780800000000000000
+      internalID: -8655511380050641867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_30
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 0
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66da222555ff9bc0800000000000000
+      internalID: -3774028216718928276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BREAKING NEWS!! BREAKING NEWS!!_31
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 0
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf812ec5454fec10800000000000000
+      internalID: 2084961318609194925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BREAKING NEWS!! BREAKING NEWS!!_0: 5991400378861022683
+      BREAKING NEWS!! BREAKING NEWS!!_1: 4802486884358833151
+      BREAKING NEWS!! BREAKING NEWS!!_10: -3788863297841235990
+      BREAKING NEWS!! BREAKING NEWS!!_11: 5174480152875475297
+      BREAKING NEWS!! BREAKING NEWS!!_12: -2564223103454747351
+      BREAKING NEWS!! BREAKING NEWS!!_13: 3195206114519342910
+      BREAKING NEWS!! BREAKING NEWS!!_14: -5437844041262340261
+      BREAKING NEWS!! BREAKING NEWS!!_15: 3331371824892970475
+      BREAKING NEWS!! BREAKING NEWS!!_16: -8943630572458162982
+      BREAKING NEWS!! BREAKING NEWS!!_17: 5440018015437319990
+      BREAKING NEWS!! BREAKING NEWS!!_18: 1903876826183310756
+      BREAKING NEWS!! BREAKING NEWS!!_19: 696684845705797617
+      BREAKING NEWS!! BREAKING NEWS!!_2: -3581742548198148043
+      BREAKING NEWS!! BREAKING NEWS!!_20: -3159790613506682669
+      BREAKING NEWS!! BREAKING NEWS!!_21: 8017103245437690035
+      BREAKING NEWS!! BREAKING NEWS!!_22: -3152374907323240429
+      BREAKING NEWS!! BREAKING NEWS!!_23: -8826930719895084473
+      BREAKING NEWS!! BREAKING NEWS!!_24: 6001977619210107233
+      BREAKING NEWS!! BREAKING NEWS!!_25: -7658292705985001408
+      BREAKING NEWS!! BREAKING NEWS!!_26: 9097724528373336674
+      BREAKING NEWS!! BREAKING NEWS!!_27: 7816085323804323090
+      BREAKING NEWS!! BREAKING NEWS!!_28: -5257418719236872237
+      BREAKING NEWS!! BREAKING NEWS!!_29: -8655511380050641867
+      BREAKING NEWS!! BREAKING NEWS!!_3: -3235381197235727011
+      BREAKING NEWS!! BREAKING NEWS!!_30: -3774028216718928276
+      BREAKING NEWS!! BREAKING NEWS!!_31: 2084961318609194925
+      BREAKING NEWS!! BREAKING NEWS!!_4: 7675069048344330140
+      BREAKING NEWS!! BREAKING NEWS!!_5: -8049472424188058754
+      BREAKING NEWS!! BREAKING NEWS!!_6: 885173260916584467
+      BREAKING NEWS!! BREAKING NEWS!!_7: -8014312961757675147
+      BREAKING NEWS!! BREAKING NEWS!!_8: -6635670922148680839
+      BREAKING NEWS!! BREAKING NEWS!!_9: -1274341237820927111
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

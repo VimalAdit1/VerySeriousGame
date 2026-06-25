@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140a602826d373b43aa8b437fd382fda, type: 3}
   m_Name: SpeedScaling
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
-  minValue: 10
-  maxValue: 15
+  minValue: 40
+  maxValue: 50
   customValues:
-  - 10
-  - 12
-  - 15
+  - 40
+  - 50
+  - 50
   flipMinAndMax: 0

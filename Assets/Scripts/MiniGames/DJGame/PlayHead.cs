@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,10 @@ public class PlayHead : MonoBehaviour
     [SerializeField] Wheel wheel;
     [SerializeField] private List<Transform> lanePoints;
     [SerializeField] private float speedToSwitch;
+    
+    [SerializeField]List<SpriteRenderer> lineSprites;
+    [SerializeField]Sprite selectedSprite;
+    [SerializeField]Sprite deselectedSprite;
     DJMiniGame miniGame;
     int currentLane = 0;
     private float accumulatedSpeed;
@@ -56,12 +61,27 @@ public class PlayHead : MonoBehaviour
 
     private void MoveToLane(int i)
     {
+        DeselectLanes();
+        SelectLane(i);
         accumulatedSpeed = 0;
         if (i >= lanePoints.Count || i < 0)
         {
             i = 0;
         }
         transform.position = new Vector3(transform.position.x, lanePoints[i].position.y, transform.position.z);
+    }
+
+    private void SelectLane(int i)
+    {
+        lineSprites[i].sprite = selectedSprite;
+    }
+
+    private void DeselectLanes()
+    {
+        foreach (var lineSprite in lineSprites)
+        {
+            lineSprite.sprite = deselectedSprite;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

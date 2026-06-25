@@ -11,6 +11,7 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     [SerializeField]DifficultyScaling decelerationScaling;
     [SerializeField]String tutorialText;
     [SerializeField]Wheel wheel;
+    [SerializeField] Animator animator;
     
     [SerializeField]GameObject startCutscene;
     [SerializeField] private float cutsceneTime;
@@ -54,6 +55,28 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
         else
         {
             previousSpeed = currentSpeed;
+        }
+
+        UpdateSpeed();
+    }
+
+    private void UpdateSpeed()
+    {
+        if (currentSpeed == 0)
+        {
+            animator.SetTrigger(Constants.idleTag);
+        }
+        else if (currentSpeed < speedToReach*.30)
+        {
+            animator.SetTrigger(Constants.slowTag);
+        }
+        else if (currentSpeed < speedToReach*.80)
+        {
+            animator.SetTrigger(Constants.mediumTag);
+        }
+        else
+        {
+            animator.SetTrigger(Constants.fastTag);
         }
     }
 

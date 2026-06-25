@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Cooldown
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
   minValue: 0.1
-  maxValue: 2
+  maxValue: 1
   customValues:
-  - 1
+  - 0.7
   - 0.5
   - 0.1
   flipMinAndMax: 1
