@@ -216,7 +216,7 @@ MonoBehaviour:
   - {fileID: 6731558022082673153}
   - {fileID: 5128447816466311624}
   - {fileID: 8248241032810926187}
-  speedToSwitch: 260
+  speedToSwitch: 275
   lineSprites:
   - {fileID: 839673474318758488}
   - {fileID: 8681215647033930785}

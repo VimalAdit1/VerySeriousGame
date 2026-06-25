@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140a602826d373b43aa8b437fd382fda, type: 3}
   m_Name: NoteCooldown
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
-  minValue: 0.1
-  maxValue: 2
+  minValue: 0.5
+  maxValue: 3
   customValues:
-  - 0.65
+  - 0.8
+  - 0.7
   - 0.6
-  - 0.55
   flipMinAndMax: 1

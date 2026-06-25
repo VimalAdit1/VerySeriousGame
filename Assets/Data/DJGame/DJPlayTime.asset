@@ -15,7 +15,7 @@ MonoBehaviour:
   minValue: 30
   maxValue: 30
   customValues:
-  - 25
-  - 27
+  - 30
+  - 30
   - 30
   flipMinAndMax: 0
