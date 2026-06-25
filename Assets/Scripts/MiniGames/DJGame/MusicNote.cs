@@ -12,7 +12,7 @@ public class MusicNote : MonoBehaviour
     }
     void Update()
     {
-        rb.MovePosition(transform.position + Vector3.left * (moveSpeed * Time.deltaTime));
+        transform.Translate(Vector3.left * (moveSpeed * Time.deltaTime));
     }
 
     public void Initialize(float noteSpeed, Sprite sprite,DJMiniGame game)

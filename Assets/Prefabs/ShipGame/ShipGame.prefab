@@ -109,8 +109,8 @@ MonoBehaviour:
   wheel: {fileID: 2762152833813859793}
   minTransform: {fileID: 7364729149411215065}
   maxTransform: {fileID: 6207054762585378680}
-  maxSpeed: 50
-  minSpeed: 15
+  maxSpeed: 1
+  minSpeed: 0.2
   shipSpriteRenderer: {fileID: 4626941900799752977}
   leftSprite: {fileID: 6102294189327227654, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
   rightSprite: {fileID: -1358576225204665282, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
@@ -984,6 +984,8 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
+  winSprite: {fileID: 0}
+  looseSprite: {fileID: 0}
   miniGameAmbience:
   - {fileID: 8300000, guid: 3f5d31fca0e9a9b4a9d9586824a2a31b, type: 3}
   winAmbience:

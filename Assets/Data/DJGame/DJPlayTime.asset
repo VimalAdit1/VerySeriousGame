@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140a602826d373b43aa8b437fd382fda, type: 3}
   m_Name: DJPlayTime
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
-  minValue: 10
-  maxValue: 25
+  minValue: 30
+  maxValue: 30
   customValues:
-  - 20
-  - 25
+  - 30
+  - 30
   - 30
   flipMinAndMax: 0

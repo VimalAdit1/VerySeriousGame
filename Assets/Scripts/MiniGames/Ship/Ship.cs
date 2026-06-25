@@ -64,8 +64,8 @@ public class Ship : MonoBehaviour
         isMovingRight = !isReverse;
         isSteering = speed!=0;
         speed = isReverse ? -speed : speed;
-        //transform.Translate(Vector3.right * (speed * Time.deltaTime), Space.World);
-        rb.MovePosition(transform.position + Vector3.right * (speed * Time.deltaTime));
+        transform.Translate(Vector3.right * (speed * Time.deltaTime));
+        //rb.MovePosition(transform.position + Vector3.right * (speed * Time.deltaTime));
         if (transform.position.x < minTransform.position.x)
         {
             transform.position = minTransform.position;
