@@ -51,7 +51,7 @@ public class Wheel : MonoBehaviour
             {
                 isReverse = true;
             }
-            speed = CalculateSpeedFromAngles();
+            speed = Mathf.Abs(CalculateSpeedFromAngles());
 
             onSpeedUpdate?.Invoke(speed,isReverse);
         }

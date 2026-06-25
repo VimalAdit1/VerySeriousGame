@@ -70,6 +70,7 @@ public class ShipMiniGame : MonoBehaviour, MiniGame
 
     IEnumerator StartGame()
     {
+        yield return StartCoroutine(GameManager.instance.GetGameUI().StartCountDown());
         WaitForSeconds wait = new WaitForSeconds(coolDown);
         while (true)
         {

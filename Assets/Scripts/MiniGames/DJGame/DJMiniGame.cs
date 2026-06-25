@@ -55,6 +55,7 @@ public class DJMiniGame : MonoBehaviour,MiniGame
 
     private IEnumerator StartGame()
     {
+        yield return StartCoroutine(GameManager.instance.GetGameUI().StartCountDown());
         WaitForSeconds wait = new WaitForSeconds(coolDown);
         while (true)
         {

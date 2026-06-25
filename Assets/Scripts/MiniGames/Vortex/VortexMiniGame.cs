@@ -94,6 +94,14 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
         {
             wheel.onSpeedUpdate += OnWheelUpdate;
         }
+
+        StartCoroutine(StartGame());
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return StartCoroutine(GameManager.instance.GetGameUI().StartCountDown());
+        
         gameStarted = true;
     }
 

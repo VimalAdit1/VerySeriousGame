@@ -106,6 +106,7 @@ public class AlienGame : MonoBehaviour,MiniGame
     public void StartMiniGame(int difficulty)
     {
         currentLevel = difficulty;
+        
         targetFrequency = Random.Range(5f, maxFrequency);
         targetAmplitude = Random.Range(0.1f, maxAmplitude);
         
@@ -118,6 +119,12 @@ public class AlienGame : MonoBehaviour,MiniGame
         currentMaterial.SetFloat(Constants.frequencyParameter, currentFrequency);
         currentMaterial.SetFloat(Constants.amplitudeParameter, currentAmplitude);
 
+        StartCoroutine(StartGame());
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return StartCoroutine(GameManager.instance.GetGameUI().StartCountDown());
         isGameStarted = true;
     }
 

@@ -230,4 +230,9 @@ public class GameManager : MonoBehaviour
         AudioManager.instance.StopAmbience();
         AudioManager.instance.StopMusic();
     }
+
+    public GameUI GetGameUI()
+    {
+        return gameUI;
+    }
 }

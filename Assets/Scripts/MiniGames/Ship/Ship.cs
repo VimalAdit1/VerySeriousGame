@@ -53,6 +53,7 @@ public class Ship : MonoBehaviour
 
     void OnWheelUpdate(float speed, bool isReverse)
     {
+        Debug.Log("Ship Spped"+speed);
         if (speed < minSpeed && speed>0)
         {
             speed = minSpeed;

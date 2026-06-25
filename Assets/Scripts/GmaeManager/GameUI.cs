@@ -17,6 +17,8 @@ public class GameUI : MonoBehaviour
     [SerializeField] private Image[] livesImage;
     [SerializeField] private Image[] winScreenSprites;
     [SerializeField] private Image[] loseScreenSprites;
+    [SerializeField] private TextMeshProUGUI countDownText;
+    [SerializeField] private GameObject countDownUI;
     private int livesLeft;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
@@ -24,7 +26,7 @@ public class GameUI : MonoBehaviour
     Coroutine timerCoroutine;
     void Start()
     {
-        
+        countDownUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class GameUI : MonoBehaviour
         ToggleWinScreen(false);
         ToggleGameOverScreen(false);
         ToggleLifeLostScreen(false);
+        countDownUI.SetActive(false);
     }
 
     internal void HidePreGameScreen()
@@ -165,5 +168,22 @@ public class GameUI : MonoBehaviour
         {
             sprite.sprite = spriteToShow;
         }
+    }
+
+    public IEnumerator StartCountDown()
+    {
+        countDownUI.SetActive(true);
+        Time.timeScale = 0f;
+        int countDown = 3;
+        while (countDown>0)
+        {
+            countDownText.SetText(countDown.ToString());
+            countDown--;
+            yield return new WaitForSecondsRealtime(1);
+        }
+        countDownText.SetText("Go");
+        yield return new WaitForSecondsRealtime(1);
+        Time.timeScale = 1f;
+        countDownUI.SetActive(false);
     }
 }
