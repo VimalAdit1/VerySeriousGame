@@ -216,7 +216,7 @@ MonoBehaviour:
   - {fileID: 6731558022082673153}
   - {fileID: 5128447816466311624}
   - {fileID: 8248241032810926187}
-  speedToSwitch: 260
+  speedToSwitch: 300
   lineSprites:
   - {fileID: 839673474318758488}
   - {fileID: 8681215647033930785}
@@ -295,13 +295,16 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
   endCutsceneTime: 5
-  winSprite: {fileID: 0}
-  looseSprite: {fileID: 0}
-  miniGameAmbience: []
-  winAmbience: []
-  loseAmbience: []
-  winSFX: []
-  loseSFX: []
+  miniGameAmbience:
+  - {fileID: 8300000, guid: 9afe1575f3bd4394b803814108f578b2, type: 3}
+  winAmbience:
+  - {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
+  loseAmbience:
+  - {fileID: 8300000, guid: b68b29d8a218a9e488cc8c9bb825c1cf, type: 3}
+  winSFX:
+  - {fileID: 8300000, guid: 65c3d4a54d9007a4399bf99b2a9a1dbc, type: 3}
+  loseSFX:
+  - {fileID: 8300000, guid: 75bd37bc8697a4a43889562396581dc0, type: 3}
 --- !u!1 &1295291443305470640
 GameObject:
   m_ObjectHideFlags: 0

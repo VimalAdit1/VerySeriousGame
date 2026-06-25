@@ -59,13 +59,15 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
   endCutsceneTime: 5
-  winSprite: {fileID: 21300000, guid: 476ff1a90423e1f4b97ee9605987c731, type: 3}
-  looseSprite: {fileID: 21300000, guid: 30b07518162679b4e97c08757543ac82, type: 3}
-  miniGameAmbience: []
+  miniGameAmbience:
+  - {fileID: 8300000, guid: 89d0097c28d28c74fa303f272c8cf72a, type: 3}
   winAmbience: []
   loseAmbience: []
-  winSFX: []
-  loseSFX: []
+  winSFX:
+  - {fileID: 8300000, guid: ef0cfbebfa58bb243be169cf5d3e9e28, type: 3}
+  loseSFX:
+  - {fileID: 8300000, guid: 156b3cffa7bd67c488b20f3b696ef785, type: 3}
+  - {fileID: 8300000, guid: f51f769d9c240bf44b0425521d6ef990, type: 3}
 --- !u!1 &947040509941867385
 GameObject:
   m_ObjectHideFlags: 0
