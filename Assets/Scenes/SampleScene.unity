@@ -1379,8 +1379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   miniGamesToSpawn:
   - {fileID: 3591538315924382164, guid: e0270230da77b2b42a0de6bff85f1d9b, type: 3}
-  - {fileID: 1729400902339677056, guid: be2f38586e721304b89e122a5695610c, type: 3}
   - {fileID: 5291634969233829358, guid: f5f57c51ecddf9443b2c8c08360fa27a, type: 3}
+  - {fileID: 1729400902339677056, guid: be2f38586e721304b89e122a5695610c, type: 3}
   - {fileID: 5422974925223487855, guid: f22368e5a4fcb9d48a41ee5888a3a3a9, type: 3}
   - {fileID: 7661706680136551482, guid: 263689e2f9954a24bb9721aef15cb54a, type: 3}
   canvas: {fileID: 1760450552}
