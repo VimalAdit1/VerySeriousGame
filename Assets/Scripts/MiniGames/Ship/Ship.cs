@@ -1,5 +1,6 @@
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Ship : MonoBehaviour
@@ -19,6 +20,8 @@ public class Ship : MonoBehaviour
     
     bool isSteering;
     bool isMovingRight;
+
+    public List<AudioClip> shipCrashSFX;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -84,6 +87,10 @@ public class Ship : MonoBehaviour
     {
         if (other.CompareTag(Constants.ObstacleTag))
         {
+            // Chooses one of the random Audios of Ship Crashing and plays it
+            AudioClip randomClip = shipCrashSFX[UnityEngine.Random.Range(0, shipCrashSFX.Count)];
+            AudioManager.instance.PlaySFX(randomClip);
+
             miniGame.OnGameLost?.Invoke();
         }
     }

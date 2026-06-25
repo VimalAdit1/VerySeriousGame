@@ -20,7 +20,16 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
-    
+
+    [Space(5), Header("Amb Clips")]
+    public List<AudioClip> miniGameAmbience;
+    public List<AudioClip> winAmbience;
+    public List<AudioClip> loseAmbience;
+
+    [Space(1)]
+    public List<AudioClip> winSFX;
+    public List<AudioClip> loseSFX;
+
     int currentLevel = 0;
     private int notesToSpawn;
     private float waitTime;
@@ -120,5 +129,50 @@ public class DJMiniGame : MonoBehaviour,MiniGame
             OnGameLost?.Invoke();
             StopMiniGame();
         }
+    }
+
+    public AudioClip GetGameWonAmb()
+    {
+        if (winAmbience.Count == 0)
+            return null;
+
+        int randVal = UnityEngine.Random.Range(0, winAmbience.Count);
+        return winAmbience[randVal];
+    }
+
+    public AudioClip GetGameWonSFX()
+    {
+        if (winSFX.Count == 0)
+            return null;
+
+        int randVal = UnityEngine.Random.Range(0, winSFX.Count);
+        return winSFX[randVal];
+    }
+
+    public AudioClip GetGameLostAmb()
+    {
+        if (loseAmbience.Count == 0)
+            return null;
+
+        int randVal = UnityEngine.Random.Range(0, loseAmbience.Count);
+        return loseAmbience[randVal];
+    }
+
+    public AudioClip GetGameLostSFX()
+    {
+        if (loseSFX.Count == 0)
+            return null;
+
+        int randVal = UnityEngine.Random.Range(0, loseSFX.Count);
+        return loseSFX[randVal];
+    }
+
+    public AudioClip GetMiniGameAmb()
+    {
+        if (miniGameAmbience.Count == 0)
+            return null;
+
+        int randVal = UnityEngine.Random.Range(0, miniGameAmbience.Count);
+        return miniGameAmbience[randVal];
     }
 }

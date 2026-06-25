@@ -21,6 +21,9 @@ public class Wheel : MonoBehaviour
     
     [SerializeField]private Transform shadowTransform;
 
+    [Space(5), Header("Wheel Audio")]
+    public AudioClip wheelTurnAudio;
+
     private float speed;
     private bool isReverse;
     
@@ -36,6 +39,7 @@ public class Wheel : MonoBehaviour
     {
         if (isDragging)
         {
+            AudioManager.instance.PlaySFX(wheelTurnAudio);
             previousAngle = currentAngle;
             UpdateWheelRotation();
             SnapMouse();

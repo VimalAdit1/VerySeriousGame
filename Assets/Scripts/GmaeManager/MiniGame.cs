@@ -1,5 +1,7 @@
+using NUnit.Framework;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public interface MiniGame
@@ -16,4 +18,11 @@ public interface MiniGame
  
  public IEnumerator PlayStartCutscene();
  public IEnumerator PlayEndCutscene();
+
+    // Audio Events
+    public AudioClip GetMiniGameAmb();
+    public AudioClip GetGameWonAmb();
+    public AudioClip GetGameWonSFX();
+    public AudioClip GetGameLostAmb();
+    public AudioClip GetGameLostSFX();
 }

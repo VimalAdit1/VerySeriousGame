@@ -61,6 +61,9 @@ public class GameManager : MonoBehaviour
         currentMiniGame.StartMiniGame(currentLevel);
         currentMiniGame.OnGameWon+=OnGameWon;
         currentMiniGame.OnGameLost+=OnGameLost;
+
+        AudioClip miniGameAmb = currentMiniGame.GetMiniGameAmb();
+        AudioManager.instance.PlayAmbience(miniGameAmb);
     }
 
     
@@ -77,7 +80,9 @@ public class GameManager : MonoBehaviour
     }
     void SpawnMiniGame()
     {
-        if(miniGameToSpawn != null)
+        StopAllAudios();
+
+        if (miniGameToSpawn != null)
             GameObject.Destroy(miniGameObj);
         miniGameToSpawn = miniGamesToSpawn[currentMinigameIndex];
         miniGameObj = GameObject.Instantiate(miniGameToSpawn, transform.position, Quaternion.identity).gameObject;
@@ -106,6 +111,14 @@ public class GameManager : MonoBehaviour
     internal void OnGameWon()
     {
         currentMiniGame.StopMiniGame();
+
+        // Audio
+        AudioClip winAmb = currentMiniGame.GetGameWonAmb();
+        AudioClip winSFX = currentMiniGame.GetGameWonSFX();
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.PlayAmbience(winAmb);
+        AudioManager.instance.PlaySFX(winSFX);
+
         if (isStoryMode)
         {
             StartCoroutine(currentMiniGame.PlayEndCutscene());
@@ -127,6 +140,14 @@ public class GameManager : MonoBehaviour
         if (isStoryMode)
         {
             currentMiniGame.StopMiniGame();
+
+            // Audio
+            AudioClip lostAmb = currentMiniGame.GetGameLostAmb();
+            AudioClip lostSFX = currentMiniGame.GetGameLostSFX();
+            AudioManager.instance.StopAmbience();
+            AudioManager.instance.PlayAmbience(lostAmb);
+            AudioManager.instance.PlaySFX(lostSFX);
+
             gameUI.ToggleRetryScreen(true);
         }
         else
@@ -197,4 +218,9 @@ public class GameManager : MonoBehaviour
         return canvas;
     }
 
+    public void StopAllAudios()
+    {
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.StopMusic();
+    }
 }
