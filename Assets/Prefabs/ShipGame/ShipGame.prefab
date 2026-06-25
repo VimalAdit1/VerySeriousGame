@@ -985,13 +985,13 @@ MonoBehaviour:
   endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
   miniGameAmbience:
-  - {fileID: 8300000, guid: 41aae6800a4c6ac4ea3e26931ac97bdc, type: 3}
+  - {fileID: 8300000, guid: 3f5d31fca0e9a9b4a9d9586824a2a31b, type: 3}
   winAmbience:
   - {fileID: 8300000, guid: e645219fb556cdc46b7814c0aca83f34, type: 3}
   loseAmbience:
   - {fileID: 8300000, guid: 98394f6338941f546acbacfa653390b5, type: 3}
   winSFX:
-  - {fileID: 8300000, guid: c1df59c966ff9a648af1528ab4eb3989, type: 3}
+  - {fileID: 8300000, guid: 14a3049d6d1eb124ca350e87d21a6048, type: 3}
   loseSFX:
   - {fileID: 8300000, guid: d095d174e94efa041b2a24a81ce5a9b2, type: 3}
   - {fileID: 8300000, guid: ac583a7381d681c4ba715f125293d3bf, type: 3}

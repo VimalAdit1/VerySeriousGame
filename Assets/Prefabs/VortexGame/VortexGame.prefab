@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
+  wheelTurnAudio: {fileID: 0}
 --- !u!58 &6466859324583537831
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -498,6 +499,14 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
   endCutsceneTime: 5
+  miniGameAmbience:
+  - {fileID: 8300000, guid: 427c3c77b7727d3438b112abedbe43fa, type: 3}
+  winAmbience:
+  - {fileID: 8300000, guid: 68d0a897cead79a46a941825ef0434d3, type: 3}
+  loseAmbience:
+  - {fileID: 8300000, guid: 9a49ab12cb5ab5546b419eb78e3b43a0, type: 3}
+  winSFX: []
+  loseSFX: []
 --- !u!1 &3772230919743406293
 GameObject:
   m_ObjectHideFlags: 0

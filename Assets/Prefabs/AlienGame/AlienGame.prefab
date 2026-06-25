@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
+  wheelTurnAudio: {fileID: 0}
 --- !u!58 &2654464170855458532
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -433,6 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
+  wheelTurnAudio: {fileID: 0}
 --- !u!58 &7947455864323863289
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -807,6 +809,16 @@ MonoBehaviour:
   maxFrequency: 15
   minAmplitude: 0
   maxAmplitude: 0.2
+  frequencyThreshold: 0.5
+  amplitudeThreshold: 0.01
+  miniGameAmbience:
+  - {fileID: 8300000, guid: ccc556608d58de64db4c5f68b57f7211, type: 3}
+  winAmbience:
+  - {fileID: 8300000, guid: fbbd18f0403c3524aa92c3914adf60e7, type: 3}
+  loseAmbience:
+  - {fileID: 8300000, guid: 9ebd856f0938d284c9da2dafcbeb4f0c, type: 3}
+  winSFX: []
+  loseSFX: []
 --- !u!1 &6152420031721244839
 GameObject:
   m_ObjectHideFlags: 0
