@@ -27,6 +27,9 @@ public class AlienGame : MonoBehaviour,MiniGame
     
     [SerializeField] float frequencyThreshold = 0.5f;
     [SerializeField] float amplitudeThreshold = 0.01f;
+    
+    [SerializeField] Sprite winSprite;
+    [SerializeField] Sprite looseSprite;
 
     [Space(5), Header("Amb Clips")]
     public List<AudioClip> miniGameAmbience;
@@ -71,11 +74,11 @@ public class AlienGame : MonoBehaviour,MiniGame
         currentAmplitude += speed;
         if (currentAmplitude >= maxAmplitude)
         {
-            currentAmplitude = maxAmplitude;
+            currentAmplitude = minAmplitude;
         }
         else if (currentAmplitude < minAmplitude)
         {
-            currentAmplitude = minAmplitude;
+            currentAmplitude = maxAmplitude;
         }
         currentMaterial.SetFloat(Constants.amplitudeParameter, currentAmplitude);
     }
@@ -89,11 +92,11 @@ public class AlienGame : MonoBehaviour,MiniGame
         currentFrequency += speed;
         if (currentFrequency >= maxFrequency)
         {
-            currentFrequency = maxFrequency;
+            currentFrequency = minFrequency;
         }
         else if (currentFrequency < minFrequency)
         {
-            currentFrequency = minFrequency;
+            currentFrequency = maxFrequency;
         }
         currentMaterial.SetFloat(Constants.frequencyParameter, currentFrequency);
     }
@@ -172,6 +175,11 @@ public class AlienGame : MonoBehaviour,MiniGame
         GameManager.instance.OnCutsceneEnd();
     }
 
+    public Sprite GetEndScreenSprite(bool isWin)
+    {
+        return isWin ? winSprite : looseSprite;
+    }
+
     public AudioClip GetGameWonAmb()
     {
         if (winAmbience.Count == 0)
@@ -215,5 +223,11 @@ public class AlienGame : MonoBehaviour,MiniGame
 
         int randVal = UnityEngine.Random.Range(0, miniGameAmbience.Count);
         return miniGameAmbience[randVal];
+    }
+
+    private void OnDestroy()
+    {
+        OnGameWon = null;
+        OnGameLost = null;
     }
 }

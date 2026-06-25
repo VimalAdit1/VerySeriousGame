@@ -17,6 +17,9 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+    
+    [SerializeField] Sprite winSprite;
+    [SerializeField] Sprite looseSprite;
 
     [Space(5), Header("Amb Clips")]
     public List<AudioClip> miniGameAmbience;
@@ -136,6 +139,11 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
         GameManager.instance.OnCutsceneEnd();
     }
 
+    public Sprite GetEndScreenSprite(bool isWin)
+    {
+        return isWin ? winSprite : looseSprite;
+    }
+
     public AudioClip GetGameWonAmb()
     {
         if (winAmbience.Count == 0)
@@ -179,5 +187,10 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
 
         int randVal = UnityEngine.Random.Range(0, miniGameAmbience.Count);
         return miniGameAmbience[randVal];
+    }
+    private void OnDestroy()
+    {
+        OnGameWon = null;
+        OnGameLost = null;
     }
 }

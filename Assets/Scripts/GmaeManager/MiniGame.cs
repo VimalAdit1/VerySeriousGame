@@ -18,6 +18,8 @@ public interface MiniGame
  
  public IEnumerator PlayStartCutscene();
  public IEnumerator PlayEndCutscene();
+ 
+ public Sprite GetEndScreenSprite(bool isWin);
 
     // Audio Events
     public AudioClip GetMiniGameAmb();

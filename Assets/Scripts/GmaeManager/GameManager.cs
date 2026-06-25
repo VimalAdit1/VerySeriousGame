@@ -118,25 +118,30 @@ public class GameManager : MonoBehaviour
         AudioManager.instance.StopAmbience();
         AudioManager.instance.PlayAmbience(winAmb);
         AudioManager.instance.PlaySFX(winSFX);
-
+        Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
         if (isStoryMode)
         {
             StartCoroutine(currentMiniGame.PlayEndCutscene());
         }
         else
         {
-            ShowWinScreen();
+            ShowWinScreen(spriteToShow);
         }
     }
 
-    internal void ShowWinScreen()
+    internal void ShowWinScreen(Sprite spriteToShow)
     {
         gameUI.ToggleWinScreen(true);
         gameUI.ToggleRetryScreen(false);
+        gameUI.SetWinScreenSprite(spriteToShow);
     }
-
+    
     internal void OnGameLost()
     {
+        
+        Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
+        gameUI.Reset();
+        gameUI.SetLooseScreenSprite(spriteToShow);
         if (isStoryMode)
         {
             currentMiniGame.StopMiniGame();
@@ -172,7 +177,8 @@ public class GameManager : MonoBehaviour
     }
     internal void OnCutsceneEnd()
     {
-        ShowWinScreen();
+        Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
+        ShowWinScreen(spriteToShow);
     }
 
     internal void Restart()
@@ -193,6 +199,7 @@ public class GameManager : MonoBehaviour
             {
                 isStoryMode = false;
                 currentMinigameIndex = 0;
+                PlayerPrefs.SetInt(Constants.IsStoryCompleteKey, 1);
                 SpawnRandomGame();
             }
             else

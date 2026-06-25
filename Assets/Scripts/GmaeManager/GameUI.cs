@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class GameUI : MonoBehaviour
     [SerializeField] private GameObject lifeLostScreen;
     [SerializeField] private TextMeshProUGUI lifeLostText;
     [SerializeField] private Image[] livesImage;
+    [SerializeField] private Image[] winScreenSprites;
+    [SerializeField] private Image[] loseScreenSprites;
     private int livesLeft;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
@@ -145,6 +148,22 @@ public class GameUI : MonoBehaviour
         else
         {
             lifeLostText.SetText("You have only one chance left.");
+        }
+    }
+
+    public void SetWinScreenSprite(Sprite spriteToShow)
+    {
+        foreach (var sprite in winScreenSprites)
+        {
+            sprite.sprite = spriteToShow;
+        }
+    }
+
+    public void SetLooseScreenSprite(Sprite spriteToShow)
+    {
+        foreach (var sprite in loseScreenSprites)
+        {
+            sprite.sprite = spriteToShow;
         }
     }
 }

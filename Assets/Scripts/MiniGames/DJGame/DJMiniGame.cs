@@ -20,6 +20,9 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+    
+    [SerializeField] Sprite winSprite;
+    [SerializeField] Sprite looseSprite;
 
     [Space(5), Header("Amb Clips")]
     public List<AudioClip> miniGameAmbience;
@@ -116,6 +119,11 @@ public class DJMiniGame : MonoBehaviour,MiniGame
         GameManager.instance.OnCutsceneEnd();
     }
 
+    public Sprite GetEndScreenSprite(bool isWin)
+    {
+       return isWin? winSprite : looseSprite;
+    }
+
     public void MusicNoteCollected()
     {
         //Crowd Goes Happy
@@ -174,5 +182,10 @@ public class DJMiniGame : MonoBehaviour,MiniGame
 
         int randVal = UnityEngine.Random.Range(0, miniGameAmbience.Count);
         return miniGameAmbience[randVal];
+    }
+    private void OnDestroy()
+    {
+        OnGameWon = null;
+        OnGameLost = null;
     }
 }

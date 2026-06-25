@@ -115,6 +115,9 @@ MonoBehaviour:
   leftSprite: {fileID: 6102294189327227654, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
   rightSprite: {fileID: -1358576225204665282, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
   defaultSprite: {fileID: 4358747955173929284, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
+  shipCrashSFX:
+  - {fileID: 8300000, guid: ac583a7381d681c4ba715f125293d3bf, type: 3}
+  - {fileID: 8300000, guid: 98394f6338941f546acbacfa653390b5, type: 3}
 --- !u!50 &1523291147364185385
 Rigidbody2D:
   serializedVersion: 5
@@ -317,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 2317640554531016166}
+  wheelTurnAudio: {fileID: 0}
 --- !u!58 &1691828709340742238
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -979,6 +983,11 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
+  miniGameAmbience: []
+  winAmbience: []
+  loseAmbience: []
+  winSFX: []
+  loseSFX: []
 --- !u!1 &7647729352542154514
 GameObject:
   m_ObjectHideFlags: 0

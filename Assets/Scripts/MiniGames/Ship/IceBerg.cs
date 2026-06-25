@@ -13,7 +13,8 @@ public class IceBerg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.MovePosition(transform.position + Vector3.down * (moveSpeed * Time.deltaTime));
+        //rb.MovePosition(transform.position + Vector3.down * (moveSpeed * Time.deltaTime));
+        transform.Translate(Vector3.down * (moveSpeed * Time.deltaTime));
         //transform.Translate();
     }
 
