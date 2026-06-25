@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 11cd85d6b3fb9f7428150fdc661b2c6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6612680304197322098
+    second: ship game ui sheet 1_0
+  - first:
+      213: 8593940430292958749
+    second: ship game ui sheet 1_1
+  - first:
+      213: 1814012188757303427
+    second: ship game ui sheet 1_2
+  - first:
+      213: -751644207596632355
+    second: ship game ui sheet 1_3
+  - first:
+      213: 7343889640303664058
+    second: ship game ui sheet 1_4
+  - first:
+      213: 3650701277192959061
+    second: ship game ui sheet 1_5
+  - first:
+      213: 8798166725552789248
+    second: ship game ui sheet 1_6
+  - first:
+      213: 1083755376656886693
+    second: ship game ui sheet 1_7
+  - first:
+      213: -2466456534428166024
+    second: ship game ui sheet 1_8
+  - first:
+      213: 6102294189327227654
+    second: ship game ui sheet 1_9
+  - first:
+      213: 2814460376596359315
+    second: ship game ui sheet 1_10
+  - first:
+      213: 13461575994524318
+    second: ship game ui sheet 1_11
+  - first:
+      213: -8149370716878065026
+    second: ship game ui sheet 1_12
+  - first:
+      213: -2958675784606412824
+    second: ship game ui sheet 1_13
+  - first:
+      213: 4358747955173929284
+    second: ship game ui sheet 1_14
+  - first:
+      213: -1358576225204665282
+    second: ship game ui sheet 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ship game ui sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 6627
+        width: 1095
+        height: 812
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27547e083b5f4cb50800000000000000
+      internalID: 6612680304197322098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 6627
+        width: 1095
+        height: 1005
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1eba78e94fc34770800000000000000
+      internalID: 8593940430292958749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 6406
+        width: 1367
+        height: 1383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380ab11897aac2910800000000000000
+      internalID: 1814012188757303427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 6190
+        y: 6406
+        width: 1239
+        height: 1306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd609b8539f9195f0800000000000000
+      internalID: -751644207596632355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 4378
+        width: 1205
+        height: 1006
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb98ffd7bcbae560800000000000000
+      internalID: 7343889640303664058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 4389
+        width: 1394
+        height: 1056
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554b6282875e9a230800000000000000
+      internalID: 3650701277192959061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 4667
+        y: 4440
+        width: 1246
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0075c3fa50e591a70800000000000000
+      internalID: 8798166725552789248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 6781
+        y: 4406
+        width: 489
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abad09e5c54a0f00800000000000000
+      internalID: 1083755376656886693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2827
+        width: 1329
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878d77b89d265cdd0800000000000000
+      internalID: -2466456534428166024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2324
+        width: 863
+        height: 1149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b97cddb34bfa450800000000000000
+      internalID: 6102294189327227654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 4717
+        y: 2269
+        width: 1432
+        height: 1394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9245476b33df2000800000000000000
+      internalID: 13461575994524318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 6857
+        y: 2580
+        width: 459
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72338d928e97ee80800000000000000
+      internalID: -8149370716878065026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1039
+        width: 1805
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef0cf4bc0ca0f6d0800000000000000
+      internalID: -2958675784606412824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 3365
+        y: 455
+        width: 976
+        height: 1116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4413a9deb226d7c30800000000000000
+      internalID: 4358747955173929284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ship game ui sheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 5562
+        y: 408
+        width: 863
+        height: 1149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3482680f1e552de0800000000000000
+      internalID: -1358576225204665282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6153224b6e965644b9d9bb4c0f2e663
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ship game ui sheet 1_0: 6612680304197322098
+      ship game ui sheet 1_1: 8593940430292958749
+      ship game ui sheet 1_10: 2814460376596359315
+      ship game ui sheet 1_11: 13461575994524318
+      ship game ui sheet 1_12: -8149370716878065026
+      ship game ui sheet 1_13: -2958675784606412824
+      ship game ui sheet 1_14: 4358747955173929284
+      ship game ui sheet 1_15: -1358576225204665282
+      ship game ui sheet 1_2: 1814012188757303427
+      ship game ui sheet 1_3: -751644207596632355
+      ship game ui sheet 1_4: 7343889640303664058
+      ship game ui sheet 1_5: 3650701277192959061
+      ship game ui sheet 1_6: 8798166725552789248
+      ship game ui sheet 1_7: 1083755376656886693
+      ship game ui sheet 1_8: -2466456534428166024
+      ship game ui sheet 1_9: 6102294189327227654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,7 +8,7 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField]List<Transform> spawnPoints;
-    [SerializeField]IceBerg icebergPrefab;
+    [SerializeField]List<IceBerg> icebergPrefabs;
     [SerializeField]DifficultyScaling timeScaling;
     [SerializeField]DifficultyScaling coolDownScaling;
     [SerializeField]DifficultyScaling spawnRateScaling;
@@ -62,6 +62,7 @@ public class ShipMiniGame : MonoBehaviour,MiniGame
             for (int i = 0; i < icebergsToSpawn; i++)
             {
                 int randomPosition = Random.Range(0, spawnPoints.Count);
+                IceBerg icebergPrefab = icebergPrefabs[Random.Range(0, icebergPrefabs.Count)];
                 IceBerg iceBerg = Instantiate(icebergPrefab, spawnPoints[randomPosition].position, Quaternion.identity)
                     .GetComponent<IceBerg>();
                 iceBerg.transform.SetParent(this.transform);

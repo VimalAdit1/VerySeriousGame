@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6410358870281178122}
   - component: {fileID: 7897408409031735592}
   m_Layer: 0
-  m_Name: IceBerg
+  m_Name: IceBerg 4
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6612680304197322098, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
+  m_Sprite: {fileID: 7343889640303664058, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,17 +140,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.13834143, y: -2.3913226}
+  m_Offset: {x: 0.1765809, y: -3.3163183}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.95, y: 8.12}
+    oldSize: {x: 12.05, y: 10.059999}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10.36766, y: 2.6344042}
+  m_Size: {x: 9.937554, y: 2.1719222}
   m_EdgeRadius: 0
 --- !u!50 &7897408409031735592
 Rigidbody2D:
