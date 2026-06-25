@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 526a8a40a658641469aadabe614e605b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1708721603192378490
+    second: merry go around game ui_0
+  - first:
+      213: 8443097613593397387
+    second: merry go around game ui_1
+  - first:
+      213: 290807168849100063
+    second: merry go around game ui_2
+  - first:
+      213: 7867347053782832000
+    second: merry go around game ui_3
+  - first:
+      213: 3416394429758718308
+    second: merry go around game ui_4
+  - first:
+      213: 3522751300650784845
+    second: merry go around game ui_5
+  - first:
+      213: -2771490814816036253
+    second: merry go around game ui_6
+  - first:
+      213: -7424465428902605601
+    second: merry go around game ui_7
+  - first:
+      213: 8890370247793427531
+    second: merry go around game ui_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: merry go around game ui_0
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 6215
+        width: 1564
+        height: 1393
+      alignment: 9
+      pivot: {x: 0.4729754, y: 0.00285783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a745152be3996b710800000000000000
+      internalID: 1708721603192378490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_1
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 6219
+        width: 1564
+        height: 1393
+      alignment: 9
+      pivot: {x: 0.5055618, y: 0.0012229815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88ce2ecb88eb2570800000000000000
+      internalID: 8443097613593397387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_2
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 6216
+        width: 1564
+        height: 1393
+      alignment: 9
+      pivot: {x: 0.47334558, y: 0.0022707006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d336d4497290400800000000000000
+      internalID: 290807168849100063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 4047
+        width: 1564
+        height: 1393
+      alignment: 9
+      pivot: {x: 0.5161935, y: 0.0026832684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0831171667e6e2d60800000000000000
+      internalID: 7867347053782832000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_4
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 3783
+        width: 1708
+        height: 1631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461446e02a8796f20800000000000000
+      internalID: 3416394429758718308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_5
+      rect:
+        serializedVersion: 2
+        x: 5059
+        y: 3854
+        width: 1561
+        height: 1479
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48d553c4a353e030800000000000000
+      internalID: 3522751300650784845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 486
+        width: 4023
+        height: 2545
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ad1a4b9cfa989d0800000000000000
+      internalID: -2771490814816036253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_7
+      rect:
+        serializedVersion: 2
+        x: 5365
+        y: 2247
+        width: 1759
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc8717670007f890800000000000000
+      internalID: -7424465428902605601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry go around game ui_8
+      rect:
+        serializedVersion: 2
+        x: 5365
+        y: 905
+        width: 1759
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44cd6d13a0f06b70800000000000000
+      internalID: 8890370247793427531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: da946faeddbe2674a93615f0cc093477
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      merry go around game ui_0: 1708721603192378490
+      merry go around game ui_1: 8443097613593397387
+      merry go around game ui_2: 290807168849100063
+      merry go around game ui_3: 7867347053782832000
+      merry go around game ui_4: 3416394429758718308
+      merry go around game ui_5: 3522751300650784845
+      merry go around game ui_6: -2771490814816036253
+      merry go around game ui_7: -7424465428902605601
+      merry go around game ui_8: 8890370247793427531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

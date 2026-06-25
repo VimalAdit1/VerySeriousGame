@@ -112,4 +112,9 @@ public class Wheel : MonoBehaviour
     {
         return ((angle % 360f) + 360f) % 360f;
     }
+
+    public float GetAngle()
+    {
+        return Normalize(currentAngle);
+    }
 }

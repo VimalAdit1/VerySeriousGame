@@ -16,6 +16,7 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+
     
     
     int currentLevel = 0;
@@ -26,6 +27,12 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
     private float badTime;
     private float minSpeed;
     private float maxSpeed;
+    
+    [SerializeField] private SpriteRenderer merryGoround;
+    [SerializeField] private Sprite sprite1;
+    [SerializeField] private Sprite sprite2;
+    [SerializeField] private Sprite sprite3;
+    [SerializeField] private Sprite sprite4;
     void Update()
     {
         if (!gameStarted)
@@ -60,6 +67,29 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
         {
             previousSpeed = currentSpeed;
         }
+
+        UpdateAnimation();
+    }
+
+    private void UpdateAnimation()
+    {
+        float angle = wheel.GetAngle();
+        if (angle > 90)
+        {
+            merryGoround.sprite = sprite1;
+        }
+        else if(angle < 180)
+        {
+            merryGoround.sprite = sprite2;
+        }
+        else if (angle < 270)
+        {
+            merryGoround.sprite = sprite3;
+        }
+        else if (angle < 360)
+        {
+            merryGoround.sprite = sprite4;
+        }
     }
 
     public Action OnGameWon { get; set; }
@@ -80,7 +110,8 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
 
     private void OnWheelUpdate(float speed, bool isReverse)
     {
-        currentSpeed += speed * Time.deltaTime;
+        currentSpeed = speed;
+        Debug.Log("FFSpeed is"+currentSpeed);
     }
 
     public void StopMiniGame()

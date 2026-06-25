@@ -8,4 +8,9 @@ public class Constants
     
     public static string frequencyParameter = "_Frequency";
     public static string amplitudeParameter = "_Amplitude";
+    
+    public static string idleTag = "Idle";
+    public static string slowTag = "Slow";
+    public static string fastTag = "Fast";
+    public static string mediumTag = "Medium";
 }

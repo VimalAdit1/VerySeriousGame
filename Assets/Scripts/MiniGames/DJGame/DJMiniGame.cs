@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class DJMiniGame : MonoBehaviour,MiniGame
 {
     [SerializeField]List<Transform> spawnPoints;
-    [SerializeField]List<Color> noteColor;
+    [SerializeField]List<Sprite> noteSprite;
     [SerializeField]String tutorialText;
     [SerializeField]DifficultyScaling timeScaling;
     [SerializeField]DifficultyScaling coolDownScaling;
@@ -52,7 +52,7 @@ public class DJMiniGame : MonoBehaviour,MiniGame
                 MusicNote note = Instantiate(musicNotePrefab, spawnPoints[randomPosition].position, Quaternion.identity)
                     .GetComponent<MusicNote>();
                 note.transform.SetParent(this.transform);
-                note.Initialize(noteSpeed,noteColor[randomPosition],this);
+                note.Initialize(noteSpeed,noteSprite[randomPosition],this);
                 yield return wait;
             }
             yield return wait;

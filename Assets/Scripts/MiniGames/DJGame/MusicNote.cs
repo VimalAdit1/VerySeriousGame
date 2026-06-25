@@ -15,10 +15,10 @@ public class MusicNote : MonoBehaviour
         rb.MovePosition(transform.position + Vector3.left * (moveSpeed * Time.deltaTime));
     }
 
-    public void Initialize(float noteSpeed, Color color,DJMiniGame game)
+    public void Initialize(float noteSpeed, Sprite sprite,DJMiniGame game)
     {
         minigame= game;
-        spriteRenderer.color = color;
+        spriteRenderer.sprite = sprite;
         moveSpeed = noteSpeed;
     }
     private void OnTriggerEnter2D(Collider2D other)

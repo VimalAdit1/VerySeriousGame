@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 57042c77d7f250046b0620feb3cc4aa0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4338578977855665938
+    second: bottle game ui sheet_0
+  - first:
+      213: 2853761472627721762
+    second: bottle game ui sheet_1
+  - first:
+      213: -7684967503592952427
+    second: bottle game ui sheet_2
+  - first:
+      213: -2075660129666386864
+    second: bottle game ui sheet_3
+  - first:
+      213: -4587592441174482680
+    second: bottle game ui sheet_4
+  - first:
+      213: 302935382202103851
+    second: bottle game ui sheet_5
+  - first:
+      213: 3409664905056333854
+    second: bottle game ui sheet_6
+  - first:
+      213: -7524052989901229585
+    second: bottle game ui sheet_7
+  - first:
+      213: -8623611924582623788
+    second: bottle game ui sheet_8
+  - first:
+      213: 1654206835524138324
+    second: bottle game ui sheet_9
+  - first:
+      213: -3971951380566864681
+    second: bottle game ui sheet_10
+  - first:
+      213: -1135891375601692706
+    second: bottle game ui sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bottle game ui sheet_0
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 4770
+        width: 1476
+        height: 2628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee88fea08654ac3c0800000000000000
+      internalID: -4338578977855665938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 5535
+        width: 1382
+        height: 1396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226cba180f89a9720800000000000000
+      internalID: 2853761472627721762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 5550
+        width: 1382
+        height: 1396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59debeda5c2895590800000000000000
+      internalID: -7684967503592952427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_3
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 474
+        width: 1979
+        height: 2986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0543bc00c16c133e0800000000000000
+      internalID: -2075660129666386864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 2884
+        width: 419
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80127891bf89550c0800000000000000
+      internalID: -4587592441174482680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 2844
+        width: 530
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28bd06002e343400800000000000000
+      internalID: 302935382202103851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6260
+        y: 3029
+        width: 107
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10bffc7a20915f20800000000000000
+      internalID: 3409664905056333854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3843
+        y: 1619
+        width: 289
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1b8b97ba1359790800000000000000
+      internalID: -7524052989901229585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5001
+        y: 1604
+        width: 260
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d51e6af4a6c25880800000000000000
+      internalID: -8623611924582623788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5975
+        y: 415
+        width: 1766
+        height: 1648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45570704a5ce4f610800000000000000
+      internalID: 1654206835524138324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3909
+        y: 434
+        width: 230
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc8030834bc0e8c0800000000000000
+      internalID: -3971951380566864681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle game ui sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 414
+        width: 258
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edfc4d5efc08c30f0800000000000000
+      internalID: -1135891375601692706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bottle game ui sheet_0: -4338578977855665938
+      bottle game ui sheet_1: 2853761472627721762
+      bottle game ui sheet_10: -3971951380566864681
+      bottle game ui sheet_11: -1135891375601692706
+      bottle game ui sheet_2: -7684967503592952427
+      bottle game ui sheet_3: -2075660129666386864
+      bottle game ui sheet_4: -4587592441174482680
+      bottle game ui sheet_5: 302935382202103851
+      bottle game ui sheet_6: 3409664905056333854
+      bottle game ui sheet_7: -7524052989901229585
+      bottle game ui sheet_8: -8623611924582623788
+      bottle game ui sheet_9: 1654206835524138324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
