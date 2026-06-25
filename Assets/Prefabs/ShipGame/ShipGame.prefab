@@ -110,7 +110,7 @@ MonoBehaviour:
   minTransform: {fileID: 7364729149411215065}
   maxTransform: {fileID: 6207054762585378680}
   maxSpeed: 50
-  minSpeed: 0.6
+  minSpeed: 15
   shipSpriteRenderer: {fileID: 4626941900799752977}
   leftSprite: {fileID: 6102294189327227654, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
   rightSprite: {fileID: -1358576225204665282, guid: 11cd85d6b3fb9f7428150fdc661b2c6d, type: 3}
@@ -204,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 1030064434897690453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.16, y: 0, z: 0}
+  m_LocalPosition: {x: 7.91, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -741,7 +741,7 @@ Transform:
   m_GameObject: {fileID: 4741107625003809750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.13, y: 0, z: 0}
+  m_LocalPosition: {x: 11.34, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -772,7 +772,7 @@ Transform:
   m_GameObject: {fileID: 5168304367426028734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -975,9 +975,9 @@ MonoBehaviour:
   speedScaling: {fileID: 11400000, guid: 5dffda8d37feb3041a5d133cdbb41e05, type: 2}
   tutorialText: Don't crash the ship
   ship: {fileID: 5444870006346414139}
-  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  startCutscene: {fileID: 6321717202233255187, guid: 933647e7744d0414ca659c33d01f9591, type: 3}
   cutsceneTime: 5
-  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
+  endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
 --- !u!1 &7647729352542154514
 GameObject:
@@ -1095,7 +1095,7 @@ Transform:
   m_GameObject: {fileID: 8527949476282080814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.58, y: 0, z: 0}
+  m_LocalPosition: {x: 4.87, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

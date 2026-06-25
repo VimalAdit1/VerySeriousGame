@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: IcebergSpeed
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyScaling
   minValue: 10
-  maxValue: 50
+  maxValue: 100
   customValues:
-  - 40
-  - 80
-  - 100
+  - 50
+  - 70
+  - 85
   flipMinAndMax: 0
