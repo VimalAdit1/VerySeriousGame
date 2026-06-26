@@ -13,4 +13,6 @@ public class Constants
     public static string slowTag = "Slow";
     public static string fastTag = "Fast";
     public static string mediumTag = "Medium";
+    
+    public static int gameScene = 1;
 }

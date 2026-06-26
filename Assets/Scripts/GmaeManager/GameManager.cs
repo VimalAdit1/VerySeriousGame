@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     
     int currentLevel;
     private bool isStoryMode;
+    private string message;
     void Awake()
     {
         if (instance == null)
@@ -62,8 +63,6 @@ public class GameManager : MonoBehaviour
         currentMiniGame.OnGameWon+=OnGameWon;
         currentMiniGame.OnGameLost+=OnGameLost;
 
-        AudioClip miniGameAmb = currentMiniGame.GetMiniGameAmb();
-        AudioManager.instance.PlayAmbience(miniGameAmb);
     }
 
     
@@ -89,6 +88,8 @@ public class GameManager : MonoBehaviour
         miniGameObj.transform.position = Vector3.zero;
         currentMiniGame = miniGameObj.GetComponent<MiniGame>();
         Time.timeScale = 1;
+        AudioClip miniGameAmb = currentMiniGame.GetMiniGameAmb();
+        AudioManager.instance.PlayAmbience(miniGameAmb);
         if (isStoryMode)
         {
             StartCoroutine(currentMiniGame.PlayStartCutscene());
@@ -104,7 +105,15 @@ public class GameManager : MonoBehaviour
         float timer = currentMiniGame.GetMiniGameTime(currentLevel);
         gameUI.Reset();
         gameUI.HideAllUI();
-        gameUI.ShowPreGameScreen(currentMiniGame.GetMiniGameTutorial());
+        if (message != null)
+        {
+            gameUI.ShowPreGameScreen(message+ currentMiniGame.GetMiniGameTutorial());
+            message = null;
+        }
+        else
+        {
+            gameUI.ShowPreGameScreen(message+ currentMiniGame.GetMiniGameTutorial());
+        }
         gameUI.SetTimer(timer,currentMiniGame.IsGameOverOnTimeEnd());
     }
 
@@ -142,10 +151,9 @@ public class GameManager : MonoBehaviour
         Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(false);
         gameUI.Reset();
         gameUI.SetLooseScreenSprite(spriteToShow);
+        currentMiniGame.StopMiniGame();
         if (isStoryMode)
         {
-            currentMiniGame.StopMiniGame();
-
             // Audio
             AudioClip lostAmb = currentMiniGame.GetGameLostAmb();
             AudioClip lostSFX = currentMiniGame.GetGameLostSFX();
@@ -173,11 +181,13 @@ public class GameManager : MonoBehaviour
     internal void RetryMiniGame()
     {
        GameObject.Destroy(miniGameObj);
+       gameUI.HideAllUI();
        SpawnMiniGame();
     }
     internal void OnCutsceneEnd()
     {
         Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
+        gameUI.HideAllUI();
         ShowWinScreen(spriteToShow);
     }
 
@@ -187,11 +197,13 @@ public class GameManager : MonoBehaviour
         levelsCompleted = 0;
         livesLeft=totalLives;
         gameUI.UpdateLivesLeft(livesLeft);
+        gameUI.HideAllUI();
         SpawnRandomGame();
     }
 
     internal void NextLevel()
     {
+        gameUI.HideAllUI();
         if (isStoryMode)
         {
             currentMinigameIndex++;
@@ -200,6 +212,7 @@ public class GameManager : MonoBehaviour
                 isStoryMode = false;
                 currentMinigameIndex = 0;
                 PlayerPrefs.SetInt(Constants.IsStoryCompleteKey, 1);
+                message = "You completed the game! Endless mode now";
                 SpawnRandomGame();
             }
             else
@@ -216,7 +229,7 @@ public class GameManager : MonoBehaviour
                 currentLevel = Mathf.Min(currentLevel, maxLevels);
                 levelsCompleted = 0;
             }
-            SpawnMiniGame();
+            SpawnRandomGame();
         }
     }
 

@@ -106,7 +106,6 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     private IEnumerator PlayCutscene(GameObject cutscene, float cutscenelength)
     {
         Debug.Log("Playing Cutscene");
-        Time.timeScale = 1;
         GameObject newCutscene = Instantiate(cutscene, GameManager.instance.GetCanvas().transform);
         newCutscene.transform.SetParent(GameManager.instance.GetCanvas().transform);
         yield return new WaitForSecondsRealtime(cutscenelength);

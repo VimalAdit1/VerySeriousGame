@@ -12,6 +12,10 @@ public class MusicNote : MonoBehaviour
     }
     void Update()
     {
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
         transform.Translate(Vector3.left * (moveSpeed * Time.deltaTime));
     }
 
