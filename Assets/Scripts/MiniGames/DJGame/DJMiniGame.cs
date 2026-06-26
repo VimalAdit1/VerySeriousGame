@@ -30,8 +30,8 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     public List<AudioClip> miniGameAmbience;
     public List<AudioClip> winAmbience;
     public List<AudioClip> loseAmbience;
-    public AudioClip noteMissedClip;
-    public AudioClip noteCollectedClip;
+    public List<AudioClip> noteMissedClip;
+    public List<AudioClip> noteCollectedClip;
     [Space(1)]
     public List<AudioClip> winSFX;
     public List<AudioClip> loseSFX;
@@ -142,14 +142,20 @@ public class DJMiniGame : MonoBehaviour,MiniGame
         PlayRandomConfetti();
         PlayLightsAnimation("LightsFlicker");
 
-        AudioManager.instance.PlaySFX(noteCollectedClip);
+        foreach(var clip in noteCollectedClip)
+        {
+            AudioManager.instance.PlaySFX(clip);
+        }
     }
 
     public void MusiNoteMissed()
     {
         PlayLightsAnimation("LightsLose");
         musicNotesMissed++;
-        AudioManager.instance.PlaySFX(noteMissedClip);
+        foreach (var clip in noteMissedClip)
+        {
+            AudioManager.instance.PlaySFX(clip);
+        }
         if (musicNotesMissed >= musicNotesToMiss)
         {
             OnGameLost?.Invoke();

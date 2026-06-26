@@ -303,12 +303,18 @@ MonoBehaviour:
   looseSprite: {fileID: -785362939964094885, guid: 62d09ae6f15e67f4a9e06f109511827d, type: 3}
   miniGameAmbience:
   - {fileID: 8300000, guid: 9afe1575f3bd4394b803814108f578b2, type: 3}
+  - {fileID: 8300000, guid: ef4d159cd4929a140812f02cb386ad60, type: 3}
+  - {fileID: 8300000, guid: d33bf2e453168274e8aa014941c8c1cb, type: 3}
   winAmbience:
   - {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
   loseAmbience:
   - {fileID: 8300000, guid: b68b29d8a218a9e488cc8c9bb825c1cf, type: 3}
-  noteMissedClip: {fileID: 8300000, guid: b68b29d8a218a9e488cc8c9bb825c1cf, type: 3}
-  noteCollectedClip: {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
+  noteMissedClip:
+  - {fileID: 8300000, guid: 8b39588fbb0295745af717db433a1fb9, type: 3}
+  - {fileID: 8300000, guid: 4512bb5c31fb4d0418c78205e05488b7, type: 3}
+  noteCollectedClip:
+  - {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
+  - {fileID: 8300000, guid: ab73e2030db19c8488522f7fce73916d, type: 3}
   winSFX:
   - {fileID: 8300000, guid: 65c3d4a54d9007a4399bf99b2a9a1dbc, type: 3}
   loseSFX:
@@ -1536,7 +1542,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
-  wheelTurnAudio: {fileID: 0}
+  wheelTurnAudio:
+  - {fileID: 8300000, guid: a7556ee9b765af543b328dac4d0cf086, type: 3}
+  - {fileID: 8300000, guid: 82d948f404368ed40a8fecd4aec15f73, type: 3}
+  - {fileID: 8300000, guid: 868f26a2c760fdc4a8ee162e511ca76b, type: 3}
 --- !u!58 &7719918650591688007
 CircleCollider2D:
   m_ObjectHideFlags: 0
