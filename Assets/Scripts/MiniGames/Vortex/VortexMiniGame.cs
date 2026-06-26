@@ -17,6 +17,8 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+    [SerializeField] GameObject looseCutscene;
+    [SerializeField] private float looseCutsceneTime;
     
     [SerializeField] Sprite winSprite;
     [SerializeField] Sprite looseSprite;
@@ -151,6 +153,12 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     {
         yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
         GameManager.instance.OnCutsceneEnd();
+    }
+
+    public IEnumerator PlayLooseCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(looseCutscene,looseCutsceneTime));
+        GameManager.instance.OnLooseCutsceneEnd();
     }
 
     public Sprite GetEndScreenSprite(bool isWin)

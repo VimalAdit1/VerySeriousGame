@@ -19,6 +19,8 @@ public interface MiniGame
  public IEnumerator PlayStartCutscene();
  public IEnumerator PlayEndCutscene();
  
+ public IEnumerator PlayLooseCutscene();
+ 
  public Sprite GetEndScreenSprite(bool isWin);
 
     // Audio Events

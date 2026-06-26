@@ -495,12 +495,14 @@ MonoBehaviour:
   tutorialText: Make a vortex
   wheel: {fileID: 3648620308620831529}
   animator: {fileID: 7943325002948599828}
-  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  cutsceneTime: 5
-  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  endCutsceneTime: 5
-  winSprite: {fileID: 0}
-  looseSprite: {fileID: 0}
+  startCutscene: {fileID: 6321717202233255187, guid: 9ee8da196e83b984e8cfc06a77247142, type: 3}
+  cutsceneTime: 4
+  endCutscene: {fileID: 6321717202233255187, guid: 918beb62cef89624e89dabf6485e667b, type: 3}
+  endCutsceneTime: 4
+  looseCutscene: {fileID: 6321717202233255187, guid: f8d6ef3389e7ee7488cba72a660608fb, type: 3}
+  looseCutsceneTime: 4
+  winSprite: {fileID: -5587819207900401235, guid: e43b3b8d9b642de4e8e42257c7930b38, type: 3}
+  looseSprite: {fileID: -5587819207900401235, guid: 232e310b1ecb00b4ebda6843742cf43f, type: 3}
   miniGameAmbience:
   - {fileID: 8300000, guid: 427c3c77b7727d3438b112abedbe43fa, type: 3}
   winAmbience:

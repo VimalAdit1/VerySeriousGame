@@ -291,13 +291,15 @@ MonoBehaviour:
   spawnRateScaling: {fileID: 11400000, guid: 20ecbf518538c1c42b6dbf41ad593679, type: 2}
   speedScaling: {fileID: 11400000, guid: 188258827dedca04a918e481a5f9ef2f, type: 2}
   musicNotePrefab: {fileID: 6372996194730779782, guid: e68dcaf3ca26dae4dad972ed4b2123ef, type: 3}
-  musicNotesToMiss: 5
-  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  cutsceneTime: 5
-  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  endCutsceneTime: 5
-  winSprite: {fileID: 0}
-  looseSprite: {fileID: 0}
+  musicNotesToMiss: 8
+  startCutscene: {fileID: 6321717202233255187, guid: 8bb58e894fd5bc946ad9f2192675cf99, type: 3}
+  cutsceneTime: 8
+  endCutscene: {fileID: 6321717202233255187, guid: 38db2b2da81e4f04ca6f58fd1fb20dda, type: 3}
+  endCutsceneTime: 4
+  looseCutscene: {fileID: 6321717202233255187, guid: 854e25f9aae016d41a7ee1e85e3a04fc, type: 3}
+  looseCutsceneTime: 4
+  winSprite: {fileID: -6106774405157419706, guid: 2dc3852cf2d895a488b4cb14763394d3, type: 3}
+  looseSprite: {fileID: -785362939964094885, guid: 62d09ae6f15e67f4a9e06f109511827d, type: 3}
   miniGameAmbience:
   - {fileID: 8300000, guid: 9afe1575f3bd4394b803814108f578b2, type: 3}
   winAmbience:

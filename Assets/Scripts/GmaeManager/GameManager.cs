@@ -155,16 +155,15 @@ public class GameManager : MonoBehaviour
         gameUI.Reset();
         gameUI.SetLooseScreenSprite(spriteToShow);
         currentMiniGame.StopMiniGame();
+        AudioClip lostAmb = currentMiniGame.GetGameLostAmb();
+        AudioClip lostSFX = currentMiniGame.GetGameLostSFX();
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.PlayAmbience(lostAmb);
+        AudioManager.instance.PlaySFX(lostSFX);
         if (isStoryMode)
         {
             // Audio
-            AudioClip lostAmb = currentMiniGame.GetGameLostAmb();
-            AudioClip lostSFX = currentMiniGame.GetGameLostSFX();
-            AudioManager.instance.StopAmbience();
-            AudioManager.instance.PlayAmbience(lostAmb);
-            AudioManager.instance.PlaySFX(lostSFX);
-
-            gameUI.ToggleRetryScreen(true);
+            StartCoroutine(currentMiniGame.PlayLooseCutscene());
         }
         else
         {
@@ -192,6 +191,10 @@ public class GameManager : MonoBehaviour
         Sprite spriteToShow = currentMiniGame.GetEndScreenSprite(true);
         gameUI.HideAllUI();
         ShowWinScreen(spriteToShow);
+    }
+    internal void OnLooseCutsceneEnd()
+    {
+        gameUI.ToggleRetryScreen(true);
     }
 
     internal void Restart()

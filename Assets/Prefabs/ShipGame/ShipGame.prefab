@@ -1317,8 +1317,10 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
-  winSprite: {fileID: 0}
-  looseSprite: {fileID: 0}
+  looseCutscene: {fileID: 6321717202233255187, guid: fdac6ba23bb99f840b040248af0286c3, type: 3}
+  looseCutsceneTime: 8
+  winSprite: {fileID: 21300000, guid: 476ff1a90423e1f4b97ee9605987c731, type: 3}
+  looseSprite: {fileID: 21300000, guid: e6d7e63aacccd66488093f009ccbe867, type: 3}
   miniGameAmbience:
   - {fileID: 8300000, guid: 3f5d31fca0e9a9b4a9d9586824a2a31b, type: 3}
   winAmbience:

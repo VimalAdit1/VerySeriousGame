@@ -14,6 +14,8 @@ public class AlienGame : MonoBehaviour,MiniGame
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+    [SerializeField] GameObject looseCutscene;
+    [SerializeField] private float looseCutsceneTime;
     
     [SerializeField] SpriteRenderer referenceSprite;
     [SerializeField] SpriteRenderer currentSprite;
@@ -180,6 +182,12 @@ public class AlienGame : MonoBehaviour,MiniGame
     {
         yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
         GameManager.instance.OnCutsceneEnd();
+    }
+
+    public IEnumerator PlayLooseCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(looseCutscene,looseCutsceneTime));
+        GameManager.instance.OnLooseCutsceneEnd();
     }
 
     public Sprite GetEndScreenSprite(bool isWin)
