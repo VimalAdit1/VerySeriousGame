@@ -28,7 +28,8 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     public List<AudioClip> miniGameAmbience;
     public List<AudioClip> winAmbience;
     public List<AudioClip> loseAmbience;
-
+    public AudioClip noteMissedClip;
+    public AudioClip noteCollectedClip;
     [Space(1)]
     public List<AudioClip> winSFX;
     public List<AudioClip> loseSFX;
@@ -126,12 +127,13 @@ public class DJMiniGame : MonoBehaviour,MiniGame
 
     public void MusicNoteCollected()
     {
-        //Crowd Goes Happy
+        AudioManager.instance.PlaySFX(noteCollectedClip);
     }
 
     public void MusiNoteMissed()
     {
         musicNotesMissed++;
+        AudioManager.instance.PlaySFX(noteMissedClip);
         if (musicNotesMissed >= musicNotesToMiss)
         {
             OnGameLost?.Invoke();

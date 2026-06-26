@@ -12,6 +12,7 @@ public class GameUI : MonoBehaviour
     [SerializeField] private GameObject winScreen;
     [SerializeField] private GameObject gameLostScreen;
     [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private GameObject lifeLostScreen;
     [SerializeField] private TextMeshProUGUI lifeLostText;
     [SerializeField] private Image[] livesImage;
@@ -19,6 +20,9 @@ public class GameUI : MonoBehaviour
     [SerializeField] private Image[] loseScreenSprites;
     [SerializeField] private TextMeshProUGUI countDownText;
     [SerializeField] private GameObject countDownUI;
+    [SerializeField] private GameObject heartsUI;
+    [SerializeField] private GameObject levelsUI;
+    [SerializeField] private TextMeshProUGUI levelsText;
     private int livesLeft;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
@@ -139,6 +143,7 @@ public class GameUI : MonoBehaviour
     public void ToggleGameOverScreen(bool value)
     {
         gameOverScreen.SetActive(value);
+        gameOverText.SetText("You completed "+levelsText.text+" levels ");
     }
 
     public void ToggleLifeLostScreen(bool value)
@@ -185,5 +190,17 @@ public class GameUI : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         Time.timeScale = 1f;
         countDownUI.SetActive(false);
+    }
+
+    public void ToggleHearts(bool value)
+    {
+        heartsUI.SetActive(value);
+        levelsUI.SetActive(value);
+    }
+
+    public void SetLevelsCompleted(int levelsCompleted)
+    {
+        levelsCompleted++;
+        levelsText.SetText(levelsCompleted.ToString());
     }
 }

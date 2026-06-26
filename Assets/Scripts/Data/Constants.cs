@@ -15,4 +15,5 @@ public class Constants
     public static string mediumTag = "Medium";
     
     public static int gameScene = 1;
+    public static int mainMenuScene = 0;
 }
