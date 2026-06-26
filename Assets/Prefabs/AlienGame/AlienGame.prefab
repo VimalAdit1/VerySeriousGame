@@ -1038,10 +1038,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AlienGame
   timeScaling: {fileID: 11400000, guid: 47b710e297572934ba3f97559fab01c4, type: 2}
   tutorialText: Match the frequency
-  startCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  cutsceneTime: 2
-  endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
-  endCutsceneTime: 2
+  startCutscene: {fileID: 6321717202233255187, guid: 7e04e85596a2ab049a1bbbf321d57438, type: 3}
+  cutsceneTime: 4
+  endCutscene: {fileID: 6321717202233255187, guid: bd6934f2b8276614d98948b0cb9fdaac, type: 3}
+  endCutsceneTime: 4
+  looseCutscene: {fileID: 6321717202233255187, guid: 4cd4401848913eb41b9c1c113a436c18, type: 3}
+  looseCutsceneTime: 4
   referenceSprite: {fileID: 4576311757069387231}
   currentSprite: {fileID: 5810411141836787300}
   frequencyWheel: {fileID: 1665660868370885456}
@@ -1052,8 +1054,8 @@ MonoBehaviour:
   maxAmplitude: 0.3
   frequencyThreshold: 0.5
   amplitudeThreshold: 0.01
-  winSprite: {fileID: 0}
-  looseSprite: {fileID: 0}
+  winSprite: {fileID: 5345846953049039777, guid: 4b0906c9668d29e48a1fc5502c4e84f1, type: 3}
+  looseSprite: {fileID: -3303421771704529730, guid: 9658f6109cbfc2740911dcae0490efdb, type: 3}
   miniGameAmbience:
   - {fileID: 8300000, guid: ccc556608d58de64db4c5f68b57f7211, type: 3}
   winAmbience:

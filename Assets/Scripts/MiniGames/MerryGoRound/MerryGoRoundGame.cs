@@ -139,6 +139,11 @@ public class MerryGoRoundGame : MonoBehaviour,MiniGame
         GameManager.instance.OnCutsceneEnd();
     }
 
+    public IEnumerator PlayLooseCutscene()
+    {
+        throw new NotImplementedException();
+    }
+
     public Sprite GetEndScreenSprite(bool isWin)
     {
         return isWin ? winSprite : looseSprite;

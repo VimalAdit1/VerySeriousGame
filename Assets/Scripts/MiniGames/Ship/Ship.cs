@@ -15,6 +15,11 @@ public class Ship : MonoBehaviour
     [SerializeField] Sprite leftSprite;
     [SerializeField] Sprite rightSprite;
     [SerializeField] Sprite defaultSprite;
+
+    [Space(5), Header("VFX Props")]
+    public ParticleSystem shipFoamVFX;
+    public ParticleSystem shipHitVFX;
+
     ShipMiniGame miniGame;
     Rigidbody2D rb;
     
@@ -30,6 +35,7 @@ public class Ship : MonoBehaviour
             wheel.onSpeedUpdate += OnWheelUpdate;
         }
         rb = GetComponent<Rigidbody2D>();
+        shipFoamVFX.Play();
     }
 
     private void UpdateSprite()
@@ -91,7 +97,9 @@ public class Ship : MonoBehaviour
             // Chooses one of the random Audios of Ship Crashing and plays it
             AudioClip randomClip = shipCrashSFX[UnityEngine.Random.Range(0, shipCrashSFX.Count)];
             AudioManager.instance.PlaySFX(randomClip);
+            shipFoamVFX.Stop();
 
+            shipHitVFX.Play();
             miniGame.OnGameLost?.Invoke();
         }
     }

@@ -12,11 +12,14 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     [SerializeField]String tutorialText;
     [SerializeField]Wheel wheel;
     [SerializeField] Animator animator;
+    [SerializeField] private ParticleSystem bubbleVFX;
     
     [SerializeField]GameObject startCutscene;
     [SerializeField] private float cutsceneTime;
     [SerializeField] GameObject endCutscene;
     [SerializeField] private float endCutsceneTime;
+    [SerializeField] GameObject looseCutscene;
+    [SerializeField] private float looseCutsceneTime;
     
     [SerializeField] Sprite winSprite;
     [SerializeField] Sprite looseSprite;
@@ -65,21 +68,25 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
 
     private void UpdateSpeed()
     {
-        if (currentSpeed == 0)
+        if (currentSpeed <= 0)
         {
             animator.SetTrigger(Constants.idleTag);
+            bubbleVFX.Stop();
         }
         else if (currentSpeed < speedToReach*.30)
         {
             animator.SetTrigger(Constants.slowTag);
+            bubbleVFX.Stop();
         }
         else if (currentSpeed < speedToReach*.80)
         {
             animator.SetTrigger(Constants.mediumTag);
+            if(!bubbleVFX.isPlaying)bubbleVFX.Play();
         }
         else
         {
             animator.SetTrigger(Constants.fastTag);
+            if(!bubbleVFX.isPlaying)bubbleVFX.Play();
         }
     }
 
@@ -151,6 +158,12 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     {
         yield return  StartCoroutine(PlayCutscene(endCutscene,endCutsceneTime));
         GameManager.instance.OnCutsceneEnd();
+    }
+
+    public IEnumerator PlayLooseCutscene()
+    {
+        yield return  StartCoroutine(PlayCutscene(looseCutscene,looseCutsceneTime));
+        GameManager.instance.OnLooseCutsceneEnd();
     }
 
     public Sprite GetEndScreenSprite(bool isWin)
