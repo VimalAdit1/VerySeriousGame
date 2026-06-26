@@ -301,7 +301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
   wheelTurnAudio:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b31116df40c166f45ba91080f214d6b1, type: 3}
+  - {fileID: 8300000, guid: 701ae0e0253dcee4abf9de59bb5542d9, type: 3}
+  - {fileID: 8300000, guid: b4b7f1d895fd57f40b72ecc10937d707, type: 3}
 --- !u!58 &2654464170855458532
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -539,7 +541,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 0}
   wheelTurnAudio:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b31116df40c166f45ba91080f214d6b1, type: 3}
+  - {fileID: 8300000, guid: 701ae0e0253dcee4abf9de59bb5542d9, type: 3}
+  - {fileID: 8300000, guid: b4b7f1d895fd57f40b72ecc10937d707, type: 3}
 --- !u!58 &7947455864323863289
 CircleCollider2D:
   m_ObjectHideFlags: 0
