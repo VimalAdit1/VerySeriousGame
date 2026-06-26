@@ -69,7 +69,7 @@ public class AlienGame : MonoBehaviour,MiniGame
 
     private void TuneAmplitude(float speed, bool isReverse)
     {
-        speed *=Time.deltaTime;
+        speed *=Time.deltaTime*0.005f;
         speed = isReverse ? -speed : speed;
         currentAmplitude += speed;
         if (currentAmplitude >= maxAmplitude)
@@ -87,7 +87,7 @@ public class AlienGame : MonoBehaviour,MiniGame
 
     private void TuneFrequency(float speed, bool isReverse)
     {
-        speed *=Time.deltaTime;
+        speed *=Time.deltaTime*0.05f;
         speed = isReverse ? -speed : speed;
         currentFrequency += speed;
         if (currentFrequency >= maxFrequency)

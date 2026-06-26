@@ -11,7 +11,7 @@ public class PlayHead : MonoBehaviour
     [SerializeField]List<SpriteRenderer> lineSprites;
     [SerializeField]Sprite selectedSprite;
     [SerializeField]Sprite deselectedSprite;
-    DJMiniGame miniGame;
+    [SerializeField]DJMiniGame miniGame;
     int currentLane = 0;
     private float accumulatedSpeed;
     void Start()
@@ -91,7 +91,7 @@ public class PlayHead : MonoBehaviour
             //Play Audio
             //SpawnFX
             Destroy(other.gameObject);
-            //miniGame.MusicNoteCollected();
+            miniGame.MusicNoteCollected();
         }
     }
 }

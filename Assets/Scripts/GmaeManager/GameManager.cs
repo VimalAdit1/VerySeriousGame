@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -80,7 +81,9 @@ public class GameManager : MonoBehaviour
     void SpawnMiniGame()
     {
         StopAllAudios();
-
+        gameUI.SetLevelsCompleted(levelsCompleted);
+        gameUI.ToggleHearts(!isStoryMode);
+        
         if (miniGameToSpawn != null)
             GameObject.Destroy(miniGameObj);
         miniGameToSpawn = miniGamesToSpawn[currentMinigameIndex];
@@ -193,12 +196,13 @@ public class GameManager : MonoBehaviour
 
     internal void Restart()
     {
-        currentLevel = 0;
+        SceneManager.LoadScene(Constants.mainMenuScene);
+        /*currentLevel = 0;
         levelsCompleted = 0;
         livesLeft=totalLives;
         gameUI.UpdateLivesLeft(livesLeft);
         gameUI.HideAllUI();
-        SpawnRandomGame();
+        SpawnRandomGame();*/
     }
 
     internal void NextLevel()
@@ -206,13 +210,14 @@ public class GameManager : MonoBehaviour
         gameUI.HideAllUI();
         if (isStoryMode)
         {
+            
             currentMinigameIndex++;
             if (currentMinigameIndex >= miniGamesToSpawn.Count)
             {
                 isStoryMode = false;
                 currentMinigameIndex = 0;
                 PlayerPrefs.SetInt(Constants.IsStoryCompleteKey, 1);
-                message = "You completed the game! Endless mode now";
+                message = "You completed the game! Endless mode now!!!  ";
                 SpawnRandomGame();
             }
             else
@@ -222,6 +227,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+
             levelsCompleted++;
             if (levelsCompleted >= levelsTolevelUp)
             {

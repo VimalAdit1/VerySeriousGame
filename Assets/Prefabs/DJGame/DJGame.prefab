@@ -187,7 +187,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.082653224, y: -0.033698797}
+  m_Offset: {x: 0.14619946, y: -0.033698797}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -197,7 +197,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.6086736, y: 4.1407456}
+  m_Size: {x: 3.770217, y: 4.1407456}
   m_EdgeRadius: 0
 --- !u!114 &6524777618481833207
 MonoBehaviour:
@@ -223,6 +223,7 @@ MonoBehaviour:
   - {fileID: 980975887814490519}
   selectedSprite: {fileID: -7409477842119092422, guid: 027c669a7060ec440b8021f47006c907, type: 3}
   deselectedSprite: {fileID: 3633027134393483736, guid: 027c669a7060ec440b8021f47006c907, type: 3}
+  miniGame: {fileID: 7627836622668569846}
 --- !u!1 &542724871955733766
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,12 +296,16 @@ MonoBehaviour:
   cutsceneTime: 5
   endCutscene: {fileID: 6321717202233255187, guid: 140ec975254435c45b6e16644c8007b9, type: 3}
   endCutsceneTime: 5
+  winSprite: {fileID: 0}
+  looseSprite: {fileID: 0}
   miniGameAmbience:
   - {fileID: 8300000, guid: 9afe1575f3bd4394b803814108f578b2, type: 3}
   winAmbience:
   - {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
   loseAmbience:
   - {fileID: 8300000, guid: b68b29d8a218a9e488cc8c9bb825c1cf, type: 3}
+  noteMissedClip: {fileID: 8300000, guid: b68b29d8a218a9e488cc8c9bb825c1cf, type: 3}
+  noteCollectedClip: {fileID: 8300000, guid: 6269bae0dde72b541ad086c85e2d542b, type: 3}
   winSFX:
   - {fileID: 8300000, guid: 65c3d4a54d9007a4399bf99b2a9a1dbc, type: 3}
   loseSFX:
