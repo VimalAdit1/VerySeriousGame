@@ -12,6 +12,7 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     [SerializeField]String tutorialText;
     [SerializeField]Wheel wheel;
     [SerializeField] Animator animator;
+    [SerializeField] private ParticleSystem bubbleVFX;
     
     [SerializeField]GameObject startCutscene;
     [SerializeField] private float cutsceneTime;
@@ -67,21 +68,25 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
 
     private void UpdateSpeed()
     {
-        if (currentSpeed == 0)
+        if (currentSpeed <= 0)
         {
             animator.SetTrigger(Constants.idleTag);
+            bubbleVFX.Stop();
         }
         else if (currentSpeed < speedToReach*.30)
         {
             animator.SetTrigger(Constants.slowTag);
+            bubbleVFX.Stop();
         }
         else if (currentSpeed < speedToReach*.80)
         {
             animator.SetTrigger(Constants.mediumTag);
+            if(!bubbleVFX.isPlaying)bubbleVFX.Play();
         }
         else
         {
             animator.SetTrigger(Constants.fastTag);
+            if(!bubbleVFX.isPlaying)bubbleVFX.Play();
         }
     }
 
