@@ -605,6 +605,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9a49ab12cb5ab5546b419eb78e3b43a0, type: 3}
   winSFX: []
   loseSFX: []
+  waterVortex: {fileID: 8300000, guid: 2820416cd06ee6040ba8b896b461950b, type: 3}
+  vortexPlayEveryXSecs: 8
 --- !u!1 &3772230919743406293
 GameObject:
   m_ObjectHideFlags: 0

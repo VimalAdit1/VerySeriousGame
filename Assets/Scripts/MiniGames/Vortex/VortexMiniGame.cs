@@ -33,6 +33,8 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     public List<AudioClip> winSFX;
     public List<AudioClip> loseSFX;
 
+    public AudioClip waterVortex;
+    public float vortexPlayEveryXSecs = 8;
 
     int currentLevel = 0;
     float decelerationRate;
@@ -40,7 +42,12 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
     private float currentSpeed;
     private float previousSpeed;
     bool gameStarted = false;
-    
+    float vortexAudioTimer;
+
+    private void Start()
+    {
+        vortexAudioTimer = 0;
+    }
 
     void Update()
     {
@@ -48,6 +55,15 @@ public class VortexMiniGame : MonoBehaviour,MiniGame
         {
             return;
         }
+
+        vortexAudioTimer -= Time.deltaTime;
+
+        if (vortexAudioTimer <= 0f)
+        {
+            AudioManager.instance.PlaySFX(waterVortex);
+            vortexAudioTimer = vortexPlayEveryXSecs;
+        }
+
         Debug.Log("Current  Speed "+currentSpeed);
         if (currentSpeed >= speedToReach)
         {
