@@ -36,6 +36,10 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     public List<AudioClip> winSFX;
     public List<AudioClip> loseSFX;
 
+    [Space(5), Header("VFX Props")]
+    public List<ParticleSystem> confettiParticleSystems;
+    public Animator lightsAnim;
+
     int currentLevel = 0;
     private int notesToSpawn;
     private float waitTime;
@@ -135,11 +139,15 @@ public class DJMiniGame : MonoBehaviour,MiniGame
 
     public void MusicNoteCollected()
     {
+        PlayRandomConfetti();
+        PlayLightsAnimation("LightsFlicker");
+
         AudioManager.instance.PlaySFX(noteCollectedClip);
     }
 
     public void MusiNoteMissed()
     {
+        PlayLightsAnimation("LightsLose");
         musicNotesMissed++;
         AudioManager.instance.PlaySFX(noteMissedClip);
         if (musicNotesMissed >= musicNotesToMiss)
@@ -197,5 +205,38 @@ public class DJMiniGame : MonoBehaviour,MiniGame
     {
         OnGameWon = null;
         OnGameLost = null;
+    }
+
+    public void PlayRandomConfetti()
+    {
+        if (confettiParticleSystems == null || confettiParticleSystems.Count == 0)
+            return;
+
+        int startIndex = Random.Range(0, confettiParticleSystems.Count);
+
+        for (int i = 0; i < confettiParticleSystems.Count; i++)
+        {
+            int index = (startIndex + i) % confettiParticleSystems.Count;
+            ParticleSystem ps = confettiParticleSystems[index];
+
+            if (ps != null && !ps.isPlaying)
+            {
+                ps.Play();
+                return;
+            }
+        }
+    }
+
+    public void PlayLightsAnimation(string stateName)
+    {
+        if (lightsAnim == null)
+            return;
+
+        AnimatorStateInfo stateInfo = lightsAnim.GetCurrentAnimatorStateInfo(0);
+
+        if (stateInfo.IsName(stateName))
+            return;
+
+        lightsAnim.Play(stateName);
     }
 }
