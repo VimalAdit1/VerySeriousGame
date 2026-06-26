@@ -474,6 +474,7 @@ Transform:
   - {fileID: 7552465896737515639}
   - {fileID: 1072775890805470106}
   - {fileID: 7264487582744724672}
+  - {fileID: 7271998375976853088}
   - {fileID: 7744325716509333067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -495,6 +496,7 @@ MonoBehaviour:
   tutorialText: Make a vortex
   wheel: {fileID: 3648620308620831529}
   animator: {fileID: 7943325002948599828}
+  bubbleVFX: {fileID: 1388582574592854509}
   startCutscene: {fileID: 6321717202233255187, guid: 9ee8da196e83b984e8cfc06a77247142, type: 3}
   cutsceneTime: 4
   endCutscene: {fileID: 6321717202233255187, guid: 918beb62cef89624e89dabf6485e667b, type: 3}
@@ -842,3 +844,70 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1001 &4863851092749673317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5422974925223487855}
+    m_Modifications:
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462424213641555595, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+      propertyPath: m_Name
+      value: BubblesVFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+--- !u!198 &1388582574592854509 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5781182326157011592, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+  m_PrefabInstance: {fileID: 4863851092749673317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7271998375976853088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2852059710069947653, guid: 5bb6d0d5d751ed14490df9ad5878a45f, type: 3}
+  m_PrefabInstance: {fileID: 4863851092749673317}
+  m_PrefabAsset: {fileID: 0}

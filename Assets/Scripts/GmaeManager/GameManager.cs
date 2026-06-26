@@ -232,11 +232,11 @@ public class GameManager : MonoBehaviour
         {
 
             levelsCompleted++;
-            if (levelsCompleted >= levelsTolevelUp)
+            if (levelsCompleted % levelsTolevelUp == 0)
             {
                 currentLevel++;
                 currentLevel = Mathf.Min(currentLevel, maxLevels);
-                levelsCompleted = 0;
+                //levelsCompleted = 0;
             }
             SpawnRandomGame();
         }
