@@ -462,7 +462,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
   shadowTransform: {fileID: 2317640554531016166}
-  wheelTurnAudio: {fileID: 0}
+  wheelTurnAudio:
+  - {fileID: 8300000, guid: 43b4f2df0611aa54abb3970dafeeb2ea, type: 3}
+  - {fileID: 8300000, guid: 1904d0b4aaa28fa47999b974d4908fa5, type: 3}
+  - {fileID: 8300000, guid: b4adb1a453567684bad7941b3fa07fc4, type: 3}
+  - {fileID: 8300000, guid: d1d1350d80c52f2428c62037b54e9c03, type: 3}
+  - {fileID: 8300000, guid: fdce6c6575a57fd48ba2634c8625e4c6, type: 3}
+  - {fileID: 8300000, guid: 6152f809a1396e249b9d09de7b29a90c, type: 3}
+  - {fileID: 8300000, guid: 33bd72a6fd8887b4484f0d24e3672708, type: 3}
 --- !u!58 &1691828709340742238
 CircleCollider2D:
   m_ObjectHideFlags: 0

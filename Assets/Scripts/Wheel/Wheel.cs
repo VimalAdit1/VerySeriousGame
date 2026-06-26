@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -22,7 +23,8 @@ public class Wheel : MonoBehaviour
     [SerializeField]private Transform shadowTransform;
 
     [Space(5), Header("Wheel Audio")]
-    public AudioClip wheelTurnAudio;
+    public List<AudioClip> wheelTurnAudio;
+    private bool isAudioPlaying = false;
 
     private float speed;
     private bool isReverse;
@@ -39,7 +41,9 @@ public class Wheel : MonoBehaviour
     {
         if (isDragging)
         {
-            AudioManager.instance.PlaySFX(wheelTurnAudio);
+            if(!isAudioPlaying)
+                StartCoroutine(PlayWheelTurnAudio());
+
             previousAngle = currentAngle;
             UpdateWheelRotation();
             SnapMouse();
@@ -60,6 +64,18 @@ public class Wheel : MonoBehaviour
         {
             shadowTransform.rotation = transform.rotation;
         }
+    }
+
+    IEnumerator PlayWheelTurnAudio()
+    {
+        int randVal = UnityEngine.Random.Range(0, wheelTurnAudio.Count);
+        AudioClip audioToPlay = wheelTurnAudio[randVal];
+        isAudioPlaying = true;
+        AudioManager.instance.PlaySFX(audioToPlay);
+
+        yield return new WaitForSeconds(audioToPlay.length + .5f);
+
+        isAudioPlaying = false;
     }
 
     private void SnapMouse()
