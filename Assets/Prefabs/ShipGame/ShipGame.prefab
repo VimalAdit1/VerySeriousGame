@@ -1089,7 +1089,7 @@ MonoBehaviour:
   endCutscene: {fileID: 6321717202233255187, guid: a7f9a537d790f0646aa167f44d2977ad, type: 3}
   endCutsceneTime: 5
   looseCutscene: {fileID: 6321717202233255187, guid: fdac6ba23bb99f840b040248af0286c3, type: 3}
-  looseCutsceneTime: 8
+  looseCutsceneTime: 5
   winSprite: {fileID: 21300000, guid: 476ff1a90423e1f4b97ee9605987c731, type: 3}
   looseSprite: {fileID: 21300000, guid: e6d7e63aacccd66488093f009ccbe867, type: 3}
   miniGameAmbience:
